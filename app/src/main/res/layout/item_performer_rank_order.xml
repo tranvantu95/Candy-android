@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ranking_size_76dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/mission_size_48dp">
+
+    <RelativeLayout
+        android:id="@+id/image_and_order"
+        android:layout_width="@dimen/ranking_size_126dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/mission_size_24dp"
+            android:gravity="center_vertical"
+            android:text="@string/current_performer_rank"
+            android:textColor="@color/text_color_profile"
+            android:textSize="@dimen/text_size_big" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/image_rank_size_2"
+            android:layout_height="@dimen/image_rank_size_2"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true">
+
+            <com.candy.android.custom.views.CircleImageView
+                android:id="@+id/civ_perfomer_in_rank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rize4_confirm" />
+
+            <LinearLayout
+                android:id="@+id/live_status_ranking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_live_in_message"
+                android:gravity="center|bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/common_size_6dp">
+
+                <ImageView
+                    android:id="@+id/ranking_live_status_image"
+                    android:layout_width="@dimen/common_size_8dp"
+                    android:layout_height="@dimen/common_size_8dp"
+                    android:layout_marginLeft="@dimen/common_size_1dp"
+                    android:src="@drawable/ic_live" />
+
+                <TextView
+                    android:id="@+id/txt_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginStart="@dimen/common_size_2dp"
+                    android:text="@string/live"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/common_size_16dp"
+        android:layout_toEndOf="@id/image_and_order">
+
+        <TextView
+            android:id="@+id/performer_name_in_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_color_profile"
+            android:textSize="@dimen/text_size_big" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_ranking_age"
+        android:layout_width="@dimen/common_size_39dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:textAlignment="viewStart"
+        android:textColor="@color/text_color_profile"
+        android:textSize="@dimen/text_size_big" />
+</RelativeLayout>

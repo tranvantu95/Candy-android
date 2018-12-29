@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="@dimen/mission_size_4dp"
+    android:background="@drawable/favorite_item_background_2">
+
+    <com.candy.android.custom.views.MissionButton
+        android:id="@+id/btn_mission_action"
+        android:layout_width="@dimen/mission_size_114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/mission_size_16dp"
+        android:layout_marginEnd="@dimen/mission_size_16dp"
+        android:layout_marginTop="@dimen/mission_size_16dp" />
+
+    <TextView
+        android:id="@+id/tv_mission_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/common_size_10dp"
+        android:layout_marginEnd="@dimen/common_size_27dp"
+        android:layout_marginStart="@dimen/mission_size_16dp"
+        android:layout_marginTop="@dimen/mission_size_16dp"
+        android:layout_toStartOf="@id/btn_mission_action"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/text_color_profile"
+        android:textSize="@dimen/common_text_size_14sp"
+        android:textStyle="bold" />
+
+    <com.candy.android.custom.views.MissionProgress
+        android:id="@+id/mission_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_mission_title"
+        android:layout_marginBottom="@dimen/mission_size_16dp"
+        android:layout_marginEnd="@dimen/mission_size_16dp"
+        android:layout_marginStart="@dimen/mission_size_16dp"
+        android:layout_toStartOf="@+id/btn_mission_action" />
+</RelativeLayout>

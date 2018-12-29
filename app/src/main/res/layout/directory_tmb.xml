@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+    <com.candy.android.custom.views.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dir_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/gallery_image_selector">
+
+        <com.candy.android.custom.gallery.SquareImageView
+            android:id="@+id/dir_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.candy.android.custom.views.SquareFrameLayout>
+
+</merge>

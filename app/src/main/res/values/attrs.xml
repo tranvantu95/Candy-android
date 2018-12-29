@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ParallaxScroll">
+        <attr name="parallax_factor" format="float" />
+        <attr name="alpha_factor" format="float" />
+        <attr name="inner_parallax_factor" format="float" />
+        <attr name="parallax_views_num" format="integer" />
+        <attr name="circular_parallax" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="corner" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="DotIndicator">
+        <attr name="radius" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+        <attr name="circleColorSelected" format="color" />
+        <attr name="circleColorNormal" format="color" />
+        <attr name="dot_size" format="dimension" />
+        <attr name="dot_count" format="integer" />
+        <attr name="dot_interval" format="dimension" />
+        <attr name="dot_color" format="color" />
+        <attr name="dot_selected_color" format="color" />
+        <attr name="dot_current" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RelativeLayoutWithMaxHeight">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Candy_State">
+        <attr name="state_candy_tab_state" format="boolean">
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level"   value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+</resources>

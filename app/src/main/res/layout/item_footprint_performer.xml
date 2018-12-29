@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/footprint_item_height"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/mission_size_12dp"
+        android:paddingEnd="@dimen/mission_size_8dp"
+        android:paddingStart="@dimen/mission_size_8dp"
+        android:paddingTop="@dimen/mission_size_12dp">
+
+        <android.support.percent.PercentFrameLayout
+            android:id="@+id/fm_avatar"
+            android:layout_width="@dimen/common_size_50dp"
+            android:layout_height="@dimen/common_size_50dp">
+
+            <com.candy.android.custom.views.RoundCornerImageView
+                android:id="@+id/iv_avatar"
+                android:scaleType="centerCrop"
+                app:corner="@dimen/favorite_list_item_avatar_corner_2"
+                app:layout_aspectRatio="100%"
+                app:layout_heightPercent="100%" />
+
+            <LinearLayout
+                android:id="@+id/live_status_footprint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_live_in_message"
+                android:gravity="center|bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/common_size_6dp">
+
+                <ImageView
+                    android:id="@+id/footprint_live_status_image"
+                    android:layout_width="@dimen/common_size_8dp"
+                    android:layout_height="@dimen/common_size_8dp"
+                    android:layout_marginLeft="@dimen/common_size_1dp"
+                    android:src="@drawable/ic_live" />
+
+                <TextView
+                    android:id="@+id/txt_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-1dp"
+                    android:layout_marginStart="@dimen/common_size_2dp"
+                    android:text="@string/live"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_8sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </android.support.percent.PercentFrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="false"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:layout_toEndOf="@id/fm_avatar">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_padding_x"
+                android:text="NAME"
+                android:textAlignment="viewStart"
+                android:textColor="@color/text_color_profile_3"
+                android:textSize="@dimen/mission_text_size_14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="6dp"
+                android:text="Age"
+                android:textColor="@color/text_color_profile_3"
+                android:textSize="@dimen/mission_text_size_14sp" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginStart="@dimen/menu_size_17dp"
+                android:layout_marginTop="@dimen/mission_size_6dp"
+                android:layout_toRightOf="@+id/tv_age"
+                android:paddingLeft="@dimen/medium_padding"
+                android:text="Area"
+                android:textColor="@color/text_color_profile_3"
+                android:textSize="@dimen/mission_text_size_14sp" />
+
+            <ImageButton
+                android:id="@+id/ibtn_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/mission_size_4dp"
+                android:background="@drawable/bg_circle_white"
+                android:src="@drawable/_atoms_favoritebtn_inactive" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/footprint_date_time"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/dialog_cancel_trolley_grey"
+                android:textSize="@dimen/text_size_nano_x" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_divider_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divider_custom_color_2" />
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/favorite_list_item_height_2"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <com.candy.android.custom.swipelib.SwipeRevealLayout
+        android:id="@+id/swipe_reveal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <!-- Your secondary layout here -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/favorite_delete_button_background"
+            android:gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/iv_remove_favorite"
+                android:layout_width="@dimen/favorite_size_80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/favorite_delete"
+                android:textColor="@color/common_border_item_list_2"
+                android:textSize="@dimen/mission_text_size_14sp" />
+        </LinearLayout>
+
+        <!-- Your main layout here -->
+        <RelativeLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/favorite_list_item_height_2"
+            android:splitMotionEvents="false">
+
+            <android.support.percent.PercentFrameLayout
+                android:id="@+id/fm_avatar"
+                android:layout_width="@dimen/favorite_size_58dp"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/favorite_size_5dp"
+                android:paddingStart="@dimen/mission_size_8dp"
+                android:paddingTop="@dimen/favorite_size_5dp">
+
+                <com.candy.android.custom.views.RoundCornerImageView
+                    android:id="@+id/iv_avatar"
+                    android:scaleType="centerCrop"
+                    app:corner="@dimen/favorite_list_item_avatar_corner_2"
+                    app:layout_aspectRatio="100%"
+                    app:layout_heightPercent="100%" />
+
+                <LinearLayout
+                    android:id="@+id/live_status_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_live_in_message"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/common_size_6dp">
+
+                    <ImageView
+                        android:id="@+id/favorite_live_status_image"
+                        android:layout_width="@dimen/common_size_8dp"
+                        android:layout_height="@dimen/common_size_8dp"
+                        android:layout_marginLeft="@dimen/common_size_1dp"
+                        android:src="@drawable/ic_live" />
+
+                    <TextView
+                        android:id="@+id/txt_live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-1dp"
+                        android:layout_marginStart="@dimen/common_size_2dp"
+                        android:text="@string/live"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.percent.PercentFrameLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/fm_avatar"
+                android:gravity="fill_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/mission_size_16dp"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/mission_text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/mission_size_4dp"
+                    android:layout_toEndOf="@+id/tv_name"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/mission_text_size_14sp" />
+
+                <ImageView
+                    android:id="@+id/btn_chat"
+                    android:layout_width="@dimen/mission_size_32dp"
+                    android:layout_height="@dimen/mission_size_32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/mission_size_24dp"
+                    app:srcCompat="@drawable/_atoms_btn_message" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.candy.android.custom.swipelib.SwipeRevealLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_divider_size"
+        android:background="@color/common_border_item_list_2"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

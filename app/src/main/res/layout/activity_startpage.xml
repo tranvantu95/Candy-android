@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    tools:context=".activity.StartPageActivity">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/start_background" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/memphislogo_startpage"
+            app:layout_marginBottomPercent="2%" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frl_btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        app:layout_marginBottomPercent="2.11%"
+        app:layout_widthPercent="91.11%">
+
+        <Button
+            android:id="@+id/btn_start"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_btn_pink"
+            android:text="@string/start"
+            android:textColor="@color/enabled_text_color"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/common_size_34dp"
+        android:layout_above="@+id/iv_powered_by"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_login"
+        android:gravity="center"
+        android:paddingLeft="@dimen/mission_size_12dp"
+        android:paddingRight="@dimen/mission_size_12dp"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/common_text_size_11sp"
+        android:textStyle="bold"
+        app:layout_marginBottomPercent="2.817%" />
+
+    <ImageView
+        android:id="@+id/iv_powered_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/_atoms_poweredby"
+        app:layout_marginBottomPercent="2.817%"
+        app:layout_widthPercent="40%" />
+</android.support.percent.PercentRelativeLayout>

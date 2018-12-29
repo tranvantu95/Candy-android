@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color_3">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_size_8dp"
+        android:background="@drawable/bg_performer_info">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/common_size_8dp"
+            android:paddingBottom="@dimen/common_size_8dp"
+            android:paddingStart="@dimen/common_size_16dp"
+            android:paddingEnd="@dimen/common_size_28dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/common_size_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_size_12dp"
+                        android:paddingBottom="@dimen/common_size_12dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_home_info"
+                            android:layout_marginEnd="@dimen/common_size_6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/house"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/colon"/>
+
+                        <TextView
+                            android:id="@+id/tv_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/performer_private"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_divider_size"
+                        android:background="@color/divider_custom_color_3" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_size_12dp"
+                        android:paddingBottom="@dimen/common_size_12dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_tall_info"
+                            android:layout_marginEnd="@dimen/common_size_6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/tall"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/colon"/>
+
+                        <TextView
+                            android:id="@+id/tv_tall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/performer_tall"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_divider_size"
+                        android:background="@color/divider_custom_color_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="@dimen/common_size_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_size_12dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_size_12dp"
+                        android:paddingBottom="@dimen/common_size_12dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_blood_info"
+                            android:layout_marginEnd="@dimen/common_size_6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/blood"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/colon"/>
+
+                        <TextView
+                            android:id="@+id/tv_blood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:ellipsize="end"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_divider_size"
+                        android:background="@color/divider_custom_color_3" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_size_12dp"
+                        android:paddingBottom="@dimen/common_size_12dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_free_time_info"
+                            android:layout_marginEnd="@dimen/common_size_6dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/infrested_time"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:text="@string/colon"/>
+
+                        <TextView
+                            android:id="@+id/tv_infrested_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextStylePerformerInfo"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="@string/infrested_time_text"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_divider_size"
+                        android:background="@color/divider_custom_color_3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_size_12dp"
+                android:paddingBottom="@dimen/common_size_12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_job_info"
+                    android:layout_marginEnd="@dimen/common_size_6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/job"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/colon"/>
+
+                <TextView
+                    android:id="@+id/tv_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/performer_job"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color_3" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_size_12dp"
+                android:paddingBottom="@dimen/common_size_12dp"
+                android:gravity="top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_favorite_info"
+                    android:layout_marginEnd="@dimen/common_size_6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/favorite"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/colon"/>
+
+                <TextView
+                    android:id="@+id/tv_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/performer_favorite"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color_3" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_size_12dp"
+                android:paddingBottom="@dimen/common_size_12dp"
+                android:gravity="top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_my_type_info"
+                    android:layout_marginEnd="@dimen/common_size_6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/my_type"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/colon"/>
+
+                <TextView
+                    android:id="@+id/tv_my_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextStylePerformerInfo"
+                    android:text="@string/performer_my_type"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/common_size_4dp"
+            android:paddingTop="@dimen/common_size_12dp"
+            android:paddingBottom="@dimen/common_size_12dp"
+            android:paddingStart="@dimen/common_size_16dp"
+            android:paddingEnd="@dimen/common_size_16dp"
+            android:src="@drawable/ic_more_info"/>
+    </FrameLayout>
+</FrameLayout>

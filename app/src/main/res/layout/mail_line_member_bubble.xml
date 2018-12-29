@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_padding"
+    android:layout_marginTop="@dimen/small_padding">
+
+    <TextView
+        android:id="@+id/groupSentDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/message_datetime_bubble"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:layout_marginEnd="@dimen/small_padding"
+        android:shrinkColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/common_size_24dp"
+                android:layout_marginEnd="@dimen/small_padding"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/alreadyRead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="@color/himecas_gray"
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/already_read" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end">
+
+                    <ImageView
+                        android:id="@+id/error_place_holder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="@dimen/medium_padding"
+                        android:src="@drawable/ic_network_error" />
+
+                    <TextView
+                        android:id="@+id/sendDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/himecas_gray"
+                        android:textSize="@dimen/text_size_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/message_member_bubble_2">
+
+                <ImageView
+                    android:id="@+id/attached_image"
+                    android:layout_width="@dimen/fragment_mail_attach_image_size"
+                    android:layout_height="@dimen/fragment_mail_attach_image_size"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:scaleType="center"
+                    android:adjustViewBounds="true" />
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/message_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text="@string/message_body_example_1" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

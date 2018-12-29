@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blog_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medium_padding"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="@dimen/mission_size_4dp"
+    card_view:cardElevation="@dimen/blog_size_1dp">
+
+    <RelativeLayout
+        android:id="@+id/cardview_inside_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/iv_blog_item_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_blog_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/blog_image_height"
+                android:scaleType="centerCrop" />
+
+            <FrameLayout
+                android:id="@+id/blog_like_button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/menu_size_30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/iv_blog_item_image"
+                android:layout_marginBottom="@dimen/mission_size_16dp"
+                android:layout_marginEnd="@dimen/mission_size_4dp"
+                android:layout_marginTop="@dimen/mission_size_16dp"
+                android:background="@drawable/bg_btn_like_blog">
+
+                <TextView
+                    android:id="@+id/blog_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/menu_size_30dp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing=".0355"
+                    android:maxLength="3"
+                    android:minWidth="@dimen/blog_size_60dp"
+                    android:paddingEnd="@dimen/mission_size_8dp"
+                    android:paddingStart="@dimen/blog_size_29dp"
+                    android:textColor="@color/dialog_cancel_trolley_grey"
+                    android:textSize="@dimen/mission_text_size_16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/blog_like_button"
+                    android:layout_width="@dimen/blog_size_18dp"
+                    android:layout_height="@dimen/blog_size_18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/mission_size_8dp"
+                    android:background="@drawable/icon_blog_like_selector" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/blog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_blog_item_image_layout"
+            android:layout_marginStart="@dimen/mission_size_8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="@dimen/blog_max_height"
+            android:textColor="@color/mission_title_color"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_post_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/iv_blog_item_image_layout"
+            android:layout_marginEnd="@dimen/mission_size_8dp"
+            android:lines="1"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/text_color_profile_3"
+            android:textSize="@dimen/blog_text_size_9sp" />
+
+        <TextView
+            android:id="@+id/blog_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blog_title"
+            android:layout_marginBottom="@dimen/mission_size_8dp"
+            android:layout_marginEnd="@dimen/mission_size_8dp"
+            android:layout_marginStart="@dimen/mission_size_8dp"
+            android:layout_marginTop="@dimen/blog_size_2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_color_profile_3"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:id="@+id/footer_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_divider_size"
+            android:layout_below="@+id/blog_body"
+            android:background="@color/divider_custom_color_3" />
+
+        <RelativeLayout
+            android:id="@+id/blog_footer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/blog_size_60dp"
+            android:layout_below="@+id/footer_divider"
+            android:paddingEnd="@dimen/common_size_0dp"
+            android:paddingStart="@dimen/mission_size_6dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/blog_detail_performer_avatar_layout"
+                android:layout_width="@dimen/menu_size_52dp"
+                android:layout_height="@dimen/menu_size_52dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <com.candy.android.custom.views.RoundCornerImageView
+                    android:id="@+id/blog_performer_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/_icons_noimage"
+                    app:corner="@dimen/favorite_list_item_avatar_corner_2" />
+
+                <LinearLayout
+                    android:id="@+id/live_status_blog_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_live_in_message"
+                    android:gravity="center|bottom"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/common_size_6dp">
+
+                    <ImageView
+                        android:id="@+id/blog_live_status_image"
+                        android:layout_width="@dimen/common_size_8dp"
+                        android:layout_height="@dimen/common_size_8dp"
+                        android:layout_marginLeft="@dimen/common_size_1dp"
+                        android:src="@drawable/ic_live" />
+
+                    <TextView
+                        android:id="@+id/txt_live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-1dp"
+                        android:layout_marginStart="@dimen/common_size_2dp"
+                        android:text="@string/live"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_blog_performer_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_padding"
+                android:layout_toEndOf="@id/blog_detail_performer_avatar"
+                android:background="@drawable/gradient_red_rounded_background"
+                android:paddingBottom="@dimen/blog_size_2dp"
+                android:paddingLeft="@dimen/mission_size_6dp"
+                android:paddingRight="@dimen/mission_size_6dp"
+                android:paddingTop="@dimen/common_size_2dp"
+                android:text="@string/blog_video_waiting_string"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/blog_performer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/blog_size_7dp"
+                android:layout_toEndOf="@id/blog_detail_performer_avatar_layout"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:textColor="@color/text_color_registration"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/other_blogs_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="fill_vertical">
+
+                <TextView
+                    android:id="@+id/tv_other_blogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/blog_text_size_11sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/common_size_0dp"
+                    android:layout_height="@dimen/blog_size_14dp"
+                    android:layout_marginEnd="@dimen/mission_size_6dp"
+                    android:layout_weight="1"
+                    android:rotation="180"
+                    android:src="@drawable/_icons_22dp_arrow" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

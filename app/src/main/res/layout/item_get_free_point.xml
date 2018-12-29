@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon_dialog_point_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/small_padding"
+        android:adjustViewBounds="true"
+        android:src="@drawable/icon_dialog_point" />
+
+    <Button
+        android:id="@+id/btn_add_point"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/dialog_point_missing_button_width"
+        android:layout_height="@dimen/dialog_point_missing_button_height"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:background="@drawable/bg_btn_green"
+        android:text="@string/btn_free"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/medium_padding"
+        android:layout_toEndOf="@id/icon_dialog_point_g"
+        android:layout_toStartOf="@id/btn_add_point">
+
+        <TextView
+            android:id="@+id/tv_point_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_point_missing_get_for_free_1"
+            android:textColor="@color/point_description_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_point_description"
+            android:layout_toEndOf="@id/tv_point_description"
+            android:layout_toRightOf="@id/tv_point_description"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/dialog_point_missing_get_for_free_2"
+            android:textColor="@color/text_color_default"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_point_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_point_description"
+            android:text="@string/dialog_point_missing_n_free_pts"
+            android:textColor="@color/point_description_color" />
+    </RelativeLayout>
+</RelativeLayout>

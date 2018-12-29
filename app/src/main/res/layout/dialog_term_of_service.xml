@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/mission_size_12dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="@dimen/mission_size_12dp"
+        android:background="@drawable/bg_white_round_corner_10"
+        android:paddingStart="@dimen/mission_size_16dp"
+        android:paddingEnd="@dimen/mission_size_16dp"
+        android:paddingBottom="@dimen/mission_size_16dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:text="@string/start_page_dialog_title"
+            android:textSize="@dimen/mission_size_16dp"
+            android:textColor="@color/mission_title_color"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_dialog_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_size_54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_term_of_service"
+            android:enabled="false"
+            android:text="@string/start_page_dialog_start"
+            android:textColor="@drawable/himecas_text_selector" />
+
+        <RadioGroup
+            android:id="@+id/rg_dialog_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_dialog_start"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/common_size_12dp"
+            android:paddingBottom="@dimen/common_size_12dp">
+
+            <RadioButton
+                android:id="@+id/rb_not_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/common_size_46dp"
+                android:button="@drawable/custom_radio_button"
+                android:paddingStart="@dimen/common_size_10dp"
+                android:textColor="@color/mission_title_color"
+                android:text="@string/start_page_not_accept_term"
+                android:textSize="@dimen/mission_size_16dp" />
+
+            <RadioButton
+                android:id="@+id/rb_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:button="@drawable/custom_radio_button"
+                android:paddingStart="@dimen/common_size_10dp"
+                android:textColor="@color/mission_title_color"
+                android:text="@string/start_page_accept_term"
+                android:textSize="@dimen/mission_size_16dp" />
+        </RadioGroup>
+
+        <WebView
+            android:id="@+id/s_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rg_dialog_confirm"
+            android:layout_below="@id/tv_dialog_title" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/terms_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/common_size_22dp"
+        android:layout_marginEnd="@dimen/common_size_2dp"
+        android:background="@drawable/_icons_22dp_remove"/>
+</FrameLayout>

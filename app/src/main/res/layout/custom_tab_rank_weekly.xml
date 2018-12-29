@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/ranking_text_selector"
+        android:background="@drawable/bg_ranking_green_rounded_corner"
+        android:textSize="@dimen/common_text_size_14sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1649"
+        android:text="@string/newcomer"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="@dimen/ranking_size_84dp"
+        android:layout_height="@dimen/mission_size_24dp" />
+</RelativeLayout>

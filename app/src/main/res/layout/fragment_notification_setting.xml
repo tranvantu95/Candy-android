@@ -1,0 +1,243 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color_3"
+    tools:context="com.candy.android.fragment.menu.NotificationSettingFragment">
+
+    <LinearLayout
+        android:id="@+id/ln_notification_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mission_size_16dp"
+            android:layout_marginStart="@dimen/common_size_17dp"
+            android:layout_marginTop="@dimen/mission_size_16dp"
+            android:text="@string/notification_setting_push"
+            android:textColor="@color/text_color_registration"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notification_bar_height"
+                android:paddingEnd="@dimen/mission_size_16dp"
+                android:paddingStart="@dimen/mission_size_16dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Switch
+                        android:id="@+id/sw_enable_push_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:minWidth="@dimen/common_size_40dp"
+                        android:switchMinWidth="@dimen/common_size_40dp"
+                        android:textOff="@string/switch_empty_text"
+                        android:textOn="@string/switch_empty_text"
+                        android:thumb="@drawable/switch_thumb"
+                        android:track="@drawable/switch_track" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/sw_enable_push_login"
+                        android:text="@string/notification_setting_push_login_notification"
+                        android:textColor="@color/text_color_registration"
+                        android:textSize="@dimen/text_size_medium" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color_3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notification_bar_height"
+                android:paddingEnd="@dimen/mission_size_16dp"
+                android:paddingStart="@dimen/mission_size_16dp">
+
+                <Switch
+                    android:id="@+id/sw_enable_push_message_from_woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="@dimen/common_size_40dp"
+                    android:switchMinWidth="@dimen/common_size_40dp"
+                    android:textOff="@string/switch_empty_text"
+                    android:textOn="@string/switch_empty_text"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/sw_enable_push_message_from_woman"
+                    android:layout_toStartOf="@id/sw_enable_push_message_from_woman"
+                    android:text="@string/notification_setting_push_message_from_woman"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color_3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notification_bar_height"
+                android:paddingEnd="@dimen/mission_size_16dp"
+                android:paddingStart="@dimen/mission_size_16dp">
+
+                <Switch
+                    android:id="@+id/sw_enable_notify_blog_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="@dimen/common_size_40dp"
+                    android:switchMinWidth="@dimen/common_size_40dp"
+                    android:textOff="@string/switch_empty_text"
+                    android:textOn="@string/switch_empty_text"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sw_enable_notify_blog_post"
+                    android:text="@string/notification_setting_push_blog_post"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color_3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/notification_bar_height"
+                android:paddingEnd="@dimen/mission_size_16dp"
+                android:paddingStart="@dimen/mission_size_16dp">
+
+                <Switch
+                    android:id="@+id/sw_enable_push_message_new_from_program"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="@dimen/common_size_40dp"
+                    android:switchMinWidth="@dimen/common_size_40dp"
+                    android:textOff="@string/switch_empty_text"
+                    android:textOn="@string/switch_empty_text"
+                    android:thumb="@drawable/switch_thumb"
+                    android:track="@drawable/switch_track" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/sw_enable_push_message_new_from_program"
+                    android:text="@string/notification_setting_push_new_from_program"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:layout_marginTop="@dimen/mission_size_16dp"
+                android:text="@string/notification_setting_push_reject_time"
+                android:textColor="@color/text_color_registration"
+                android:textSize="@dimen/text_size_medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_size_42dp"
+                android:layout_marginBottom="@dimen/mission_size_8dp"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/mission_size_16dp"
+                android:paddingEnd="@dimen/common_size_0dp">
+
+                <TextView
+                    android:id="@+id/edt_reject_push_time_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_notification_setting_hour"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/common_size_14dp"
+                    android:paddingStart="@dimen/mission_size_16dp"
+                    android:text="@string/notification_setting_push_hint_time_start"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/mission_size_8dp"
+                    android:paddingStart="@dimen/mission_size_8dp"
+                    android:text="@string/notification_setting_push_hint_time_divider"
+                    android:textColor="@color/dialog_cancel_trolley_grey"
+                    android:textSize="@dimen/common_text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/edt_reject_push_time_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_notification_setting_hour"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="@dimen/common_size_14dp"
+                    android:paddingStart="@dimen/mission_size_16dp"
+                    android:text="@string/notification_setting_push_hint_time_end"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="22dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:text="@string/notification_setting_push_hint_time"
+                android:textColor="@color/dialog_cancel_trolley_grey"
+                android:textSize="@dimen/text_size_small" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color_3" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

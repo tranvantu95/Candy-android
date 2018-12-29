@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:minHeight="@dimen/fragment_mail_line_toolbox_height"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:weightSum="100">
+
+    <ImageButton
+        android:id="@+id/btn_send_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/big_padding"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_action_plus" />
+
+    <ImageButton
+        android:id="@+id/btn_emojiOne"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/big_padding"
+        android:background="?attr/selectableItemBackground"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_smile" />
+
+    <ImageView
+        android:id="@+id/image_to_be_sent"
+        android:layout_width="@dimen/image_to_send_width"
+        android:layout_height="@dimen/image_to_send_height"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test_2"
+        android:visibility="gone" />
+
+    <com.vanniktech.emoji.EmojiEditText
+        android:id="@+id/edt_new_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/fragment_mail_line_toolbox_height"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|start"
+        android:layout_weight="100"
+        android:background="@null"
+        android:hint="@string/fragment_mail_line_enter_your_message_hint"
+        android:imeOptions="actionSend"
+        android:inputType="textMultiLine"
+        android:maxLines="@integer/max_line_message_input"
+        android:maxLength="1000"
+        android:padding="@dimen/small_padding"
+        android:textColorHint="@color/himecas_gray" />
+
+    <com.vanniktech.emoji.EmojiButton
+        android:id="@+id/btn_send_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_btn_send"
+        android:gravity="center"
+        android:text="@string/fragment_mail_line_send_messaage"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>

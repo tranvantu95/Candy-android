@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Candy Android.iml" filepath="$PROJECT_DIR$/Candy Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-WebSocket/Java-WebSocket.iml" filepath="$PROJECT_DIR$/Java-WebSocket/Java-WebSocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emoji/emoji.iml" filepath="$PROJECT_DIR$/emoji/emoji.iml" />
+      <module fileurl="file://$PROJECT_DIR$/emoji-one/emoji-one.iml" filepath="$PROJECT_DIR$/emoji-one/emoji-one.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fullscreenvideoview/fullscreenvideoview.iml" filepath="$PROJECT_DIR$/fullscreenvideoview/fullscreenvideoview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/live-video/live-video.iml" filepath="$PROJECT_DIR$/live-video/live-video.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wcs-android-sdk-1.0.1.24/wcs-android-sdk-1.0.1.24.iml" filepath="$PROJECT_DIR$/wcs-android-sdk-1.0.1.24/wcs-android-sdk-1.0.1.24.iml" />
+    </modules>
+  </component>
+</project>

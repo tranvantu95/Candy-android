@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_tab_height">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.candy.android.custom.views.TabItemView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/main_tab_icon_size"
+            android:layout_height="@dimen/main_tab_icon_size"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_message" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_tab_text_color"
+            android:textSize="@dimen/common_text_size_8sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/unread_message_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_size_6dp"
+        android:background="@drawable/bg_count_msg"
+        android:gravity="center"
+        android:lines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_nano_x"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_anchor="@id/icon"
+        app:layout_anchorGravity="top|right" />
+</android.support.design.widget.CoordinatorLayout>

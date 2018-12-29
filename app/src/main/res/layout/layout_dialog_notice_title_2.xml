@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_white_round_corner_20"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="@dimen/mission_size_24dp"
+            android:letterSpacing="0.1543"
+            android:text="@string/title"
+            android:textAlignment="center"
+            android:textColor="@color/mission_green_color"
+            android:textSize="@dimen/common_text_size_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="false"
+            android:layout_marginEnd="@dimen/common_size_20dp"
+            android:layout_marginStart="@dimen/common_size_20dp"
+            android:layout_marginTop="@dimen/mission_size_16dp"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_profile_3"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_message"
+            android:layout_marginBottom="@dimen/mission_size_24dp"
+            android:layout_marginEnd="@dimen/mission_size_16dp"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:layout_marginTop="@dimen/mission_size_24dp"
+            android:background="@drawable/btn_sms_2"
+            android:gravity="center"
+            android:padding="@dimen/dialog_content_padding"
+            android:text="@string/notice_dialog_default_ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</FrameLayout>

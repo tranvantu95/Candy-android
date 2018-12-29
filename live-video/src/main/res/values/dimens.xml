@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="performer_image_size">30dp</dimen>
+
+    <dimen name="tiny_padding">2dp</dimen>
+    <dimen name="min_padding">4dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="medium_padding">12dp</dimen>
+    <dimen name="big_padding">14dp</dimen>
+    <dimen name="text_size_big">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="setting_icon_margin_right">40dp</dimen>
+
+
+    <dimen name="local_video_width">83dp</dimen>
+    <dimen name="switch_camera_size">30dp</dimen>
+    <dimen name="switch_camera_large_size">36dp</dimen>
+    <dimen name="switch_camera_padding_size">2dp</dimen>
+    <dimen name="switch_camera_padding_large_size">3dp</dimen>
+
+
+    <!--Setting dialog-->
+    <dimen name="seek_bar_margin_left">28dp</dimen>
+    <dimen name="yellow_button_corner_radius">40dp</dimen>
+    <dimen name="pink_button_corner_radius">40dp</dimen>
+
+    <!-- Chat panel -->
+    <dimen name="chat_panel_edt_margin">4dp</dimen>
+    <dimen name="list_chat_padding">8dp</dimen>
+    <dimen name="message_margin">4dp</dimen>
+    <dimen name="bottom_bar_min_height">48dp</dimen>
+    <dimen name="selected_tab_indicator_height">2dp</dimen>
+
+    <!--Commom dialog-->
+    <dimen name="dialog_title_size">16sp</dimen>
+    <dimen name="dialog_sub_title_size">12sp</dimen>
+    <dimen name="dialog_height">230dp</dimen>
+    <dimen name="common_dialog_padding">15dp</dimen>
+    <dimen name="default_divider_size">1dp</dimen>
+    <dimen name="setting_icon_height">25dp</dimen>
+    <dimen name="setting_icon_width">46dp</dimen>
+    <dimen name="setting_text_size_default">14sp</dimen>
+    <dimen name="setting_text_size_small">10sp</dimen>
+</resources>

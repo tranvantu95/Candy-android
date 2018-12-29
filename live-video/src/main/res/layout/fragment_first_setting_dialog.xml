@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_speaker_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/small_padding"
+            android:text="@string/sound_volume"
+            android:textColor="#7f7784"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_speaker_title"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/small_padding">
+
+            <FrameLayout
+                android:id="@+id/speaker_layout"
+                android:layout_width="@dimen/setting_icon_width"
+                android:layout_height="@dimen/setting_icon_height"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/ic_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_speaker"/>
+
+            </FrameLayout>
+
+            <SeekBar
+                android:id="@+id/sb_sound_volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/speaker_layout"
+                android:layout_toRightOf="@id/speaker_layout"
+                android:max="100"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:paddingBottom="@dimen/min_padding"
+                android:paddingTop="@dimen/min_padding"
+                android:progressDrawable="@drawable/seekbar_color"
+                android:thumbTint="@color/seekbar_tint_color"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#d8d8d8"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <FrameLayout
+            android:id="@+id/mic_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_icon_mic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ico_mic_on_black"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_on_off_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/mic_layout"
+            android:gravity="center_vertical"
+            android:text="@string/use_microphone"
+            android:textSize="@dimen/setting_text_size_default"
+            android:textColor="#7f7784"/>
+
+        <TextView
+            android:id="@+id/tv_micro_two_shot_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/tv_on_off_micro"
+            android:text="@string/notice_two_shot_only"
+            android:textSize="12sp"
+            android:textColor="#7f7784" />
+
+        <CheckBox
+            android:id="@+id/sw_microphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:button="@drawable/btn_switch"
+            android:checked="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#d8d8d8"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp">
+
+        <FrameLayout
+            android:id="@+id/camera_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/iv_icon_camera"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ico_video_on_black"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_on_off_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/camera_layout"
+            android:gravity="center_vertical"
+            android:text="@string/use_camera"
+            android:textSize="@dimen/setting_text_size_default"
+            android:textColor="#7f7784"/>
+
+        <TextView
+            android:id="@+id/tv_camera_two_shot_only"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/tv_on_off_camera"
+            android:text="@string/notice_two_shot_only"
+            android:textSize="12sp"
+            android:textColor="#7f7784" />
+
+        <CheckBox
+            android:id="@+id/sw_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:button="@drawable/btn_switch" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#d8d8d8"/>
+
+    <TextView
+        android:id="@+id/tv_setting_complete"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_btn_pink"
+        android:text="@string/setting_complete"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="visible"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#291736"
+    android:orientation="vertical"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/purchase_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_padding"
+        android:text="@string/purchase_point"
+        android:textSize="@dimen/common_text_size_14sp"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:id="@+id/divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_divider_size"
+        android:background="@color/dialog_cancel_trolley_grey"
+        android:layout_marginBottom="@dimen/common_size_4dp"/>
+
+    <TextView
+        android:id="@+id/not_enough_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_size_8dp"
+        android:padding="@dimen/medium_padding"
+        android:text="@string/purchase_point_not_enough"
+        android:textSize="@dimen/common_text_size_14sp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/purchase_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_size_0dp"
+        android:layout_weight="1"
+        android:paddingStart="@dimen/common_size_8dp"
+        android:paddingEnd="@dimen/common_size_8dp"
+        android:paddingTop="@dimen/common_size_4dp"
+        android:paddingBottom="@dimen/common_size_4dp"
+        android:clipToPadding="false"/>
+
+    <View
+        android:id="@+id/divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_divider_size"
+        android:background="@color/dialog_cancel_trolley_grey"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/common_size_8dp"
+        android:padding="@dimen/common_size_8dp"
+        android:text="@string/cancel"
+        android:textSize="@dimen/common_text_size_14sp"
+        android:textColor="@color/purchase_point_cancel_button" />
+</LinearLayout>

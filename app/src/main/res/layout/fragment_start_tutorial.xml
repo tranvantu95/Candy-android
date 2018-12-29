@@ -1,0 +1,20 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="?android:actionBarSize">
+
+    <RelativeLayout
+        android:id="@+id/rl_tutorial_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/common_size_16dp"
+        android:layout_marginStart="@dimen/common_size_16dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/tutorial_common_button_margin_bottom"
+        android:paddingTop="?android:actionBarSize"
+        android:visibility="visible">
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

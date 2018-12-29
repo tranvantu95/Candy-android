@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sms_top_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color"
+    android:clickable="true"
+    tools:context="com.candy.android.fragment.SMSAuthenticateCodeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_padding"
+        android:background="@drawable/profile_background">
+
+        <TextView
+            android:id="@+id/tv_enter_code_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/common_size_61dp"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:layout_marginTop="@dimen/mission_size_24dp"
+            android:letterSpacing="0.1572"
+            android:text="@string/enter_your_code"
+            android:textAlignment="viewStart"
+            android:textColor="@color/text_color_profile_3"
+            android:textSize="@dimen/common_text_size_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_code_number_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_enter_code_title"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:layout_marginTop="@dimen/mission_size_8dp"
+            android:text="@string/code_note"
+            android:textAlignment="viewStart"
+            android:textColor="@color/dialog_cancel_trolley_grey"
+            android:textSize="@dimen/common_text_size_11sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_code_number_note"
+            android:layout_marginBottom="@dimen/mission_size_24dp"
+            android:layout_marginEnd="@dimen/mission_size_16dp"
+            android:layout_marginStart="@dimen/common_size_16dp"
+            android:layout_marginTop="@dimen/common_size_16dp">
+
+            <EditText
+                android:id="@+id/edt_code_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_edit_text_size_47dp"
+                android:background="@drawable/phone_input_background_2"
+                android:hint="@string/code_hint"
+                android:inputType="phone"
+                android:maxLength="6"
+                android:paddingEnd="@dimen/common_size_36dp"
+                android:paddingStart="@dimen/mission_size_12dp"
+                android:textColorHint="@color/common_hint_color_timberwolf"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="@dimen/text_size_medium" />
+
+            <Button
+                android:id="@+id/btn_clear_code"
+                android:layout_width="@dimen/menu_size_35dp"
+                android:layout_height="@dimen/menu_size_35dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/common_size_9dp"
+                android:background="@drawable/text_field_clear_btn" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/authenticate"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mission_size_24dp"
+        android:layout_marginEnd="@dimen/common_size_16dp"
+        android:layout_marginStart="@dimen/common_size_16dp"
+        android:background="@drawable/btn_sms"
+        android:text="@string/authenticate"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_big"
+        android:textStyle="bold" />
+</RelativeLayout>

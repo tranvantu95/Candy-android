@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.candy.android.fragment.BlogsListFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swr_blog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background_color_3">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/blogs_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/small_padding"
+            android:paddingStart="@dimen/small_padding"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background_color_3"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="@dimen/mission_size_32dp"
+            android:drawableTop="@drawable/_icons_4dpborder_heart"
+            android:text="@string/no_content_blog_message"
+            android:textAlignment="viewStart"
+            android:textColor="@color/divider_custom_color_3"
+            android:textSize="@dimen/mission_text_size_14sp" />
+    </RelativeLayout>
+</RelativeLayout>

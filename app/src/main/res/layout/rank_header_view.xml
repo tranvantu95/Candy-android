@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/ranking_day_navigation_layout"
+            layout="@layout/item_ranking_day_navigation"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/ranking_month_navigation_layout"
+            layout="@layout/item_ranking_month_navigation"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/ranking_week_navigation_layout"
+            layout="@layout/item_ranking_week_navigation"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ranking_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ranking_red" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/ranking_background_image"
+            android:layout_alignTop="@+id/ranking_background_image"
+            android:orientation="horizontal">
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/percent_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_widthPercent="33.33%">
+
+                <View
+                    android:id="@+id/view_holder1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="26%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/fl_rank_avatar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_holder1"
+                    android:layout_centerInParent="true"
+                    app:layout_heightPercent="45%"
+                    app:layout_widthPercent="70%">
+
+                    <com.candy.android.custom.views.CircleImageView
+                        android:id="@+id/civ_second_rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:gravity="bottom"
+                        android:src="@drawable/rize_name"
+                        app:layout_heightPercent="84%" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/_atoms_ranking_no_1_copy" />
+                </android.support.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_second_performer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fl_rank_avatar1"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_size_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/naoko_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_13sp"
+                    app:layout_widthPercent="70%" />
+
+                <LinearLayout
+                    android:id="@+id/ll_icon_live_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_second_performer_name"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/common_size_8dp"
+                    android:background="@drawable/bg_performer_status"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/common_size_1dp"
+                    android:paddingEnd="@dimen/common_size_10dp"
+                    android:paddingStart="@dimen/common_size_10dp"
+                    android:paddingTop="@dimen/common_size_1dp">
+
+                    <ImageView
+                        android:id="@+id/im_second_rank_performer_status"
+                        android:layout_width="@dimen/common_size_8dp"
+                        android:layout_height="@dimen/common_size_8dp"
+                        android:src="@drawable/ic_live" />
+
+                    <TextView
+                        android:id="@+id/tv_second_performer_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:text="@string/live"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/percent_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/percent_1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_widthPercent="33.33%">
+
+                <View
+                    android:id="@+id/view_holder2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="18%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/fl_rank_avatar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_holder2"
+                    android:layout_centerInParent="true"
+                    app:layout_heightPercent="45%"
+                    app:layout_widthPercent="70%">
+
+                    <com.candy.android.custom.views.CircleImageView
+                        android:id="@+id/civ_first_rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/common_size_1dp"
+                        android:gravity="bottom"
+                        android:src="@drawable/rize_name"
+                        app:layout_heightPercent="84%" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/_atoms_ranking_no_1" />
+                </android.support.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_first_performer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fl_rank_avatar2"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_size_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/naoko_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_13sp"
+                    app:layout_widthPercent="70%" />
+
+                <LinearLayout
+                    android:id="@+id/ll_icon_live_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_first_performer_name"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_size_8dp"
+                    android:background="@drawable/bg_performer_status"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/common_size_1dp"
+                    android:paddingEnd="@dimen/common_size_10dp"
+                    android:paddingStart="@dimen/common_size_10dp"
+                    android:paddingTop="@dimen/common_size_1dp">
+
+                    <ImageView
+                        android:id="@+id/im_first_rank_performer_status"
+                        android:layout_width="@dimen/common_size_8dp"
+                        android:layout_height="@dimen/common_size_8dp"
+                        android:src="@drawable/ic_live" />
+
+                    <TextView
+                        android:id="@+id/tv_first_performer_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_size_2dp"
+                        android:text="@string/live"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/percent_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/percent_2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:layout_widthPercent="33.33%">
+
+                <View
+                    android:id="@+id/view_holder3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_heightPercent="26%" />
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/fl_rank_avatar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_holder3"
+                    android:layout_centerInParent="true"
+                    app:layout_heightPercent="45%"
+                    app:layout_widthPercent="70%">
+
+                    <com.candy.android.custom.views.CircleImageView
+                        android:id="@+id/civ_third_rank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/common_size_1dp"
+                        android:gravity="bottom"
+                        android:src="@drawable/rize_name"
+                        app:layout_heightPercent="84%" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/_atoms_ranking_no_1_copy_2" />
+                </android.support.percent.PercentRelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_third_performer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/fl_rank_avatar3"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/common_size_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/naoko_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_13sp"
+                    app:layout_widthPercent="70%" />
+
+                <LinearLayout
+                    android:id="@+id/ll_icon_live_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_third_performer_name"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_size_8dp"
+                    android:background="@drawable/bg_performer_status"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/common_size_1dp"
+                    android:paddingEnd="@dimen/common_size_10dp"
+                    android:paddingStart="@dimen/common_size_10dp"
+                    android:paddingTop="@dimen/common_size_1dp">
+
+                    <ImageView
+                        android:id="@+id/im_third_rank_performer_status"
+                        android:layout_width="@dimen/common_size_8dp"
+                        android:layout_height="@dimen/common_size_8dp"
+                        android:src="@drawable/ic_live" />
+
+                    <TextView
+                        android:id="@+id/tv_third_performer_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_size_2dp"
+                        android:text="@string/live"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_text_size_8sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </android.support.percent.PercentRelativeLayout>
+        </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

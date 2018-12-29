@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">livechatapp</string>
+
+    <string name="action_bar_n_pts">%,dpts</string>
+
+    <!--API URL-->
+    <!--<string name="api_inc_chat_config_url">http://www.angel-live.jp/flax/fss/49608/incChatConfig.json</string>-->
+    <string name="api_inc_chat_config_url">https://d1m058y83a6qbz.cloudfront.net/incChatConfig.json</string>
+
+    <string name="edit_chat_text_hint">コメントを入力</string>
+    <string name="edit_chat_text_hint_peep">ナイショ話(100pts消費)</string>
+    <string name="default_send_chat_color">#00000000</string>
+
+    <!--for dialog-->
+    <string name="dialog_logout_text">ログアウトしますか？</string>
+    <string name="dialog_2shot_request_text">2SHOTを申し込みますか？</string>
+    <string name="dialog_2shot_request_text_sub">(200pts/1分)</string>
+    <string name="dialog_2shot_wait_text">女の子からの返事を待っています</string>
+    <string name="dialog_2shot_re_request_text">応答がないためお誘いはキャンセル\nされました。\nまた誘ってあげてください。</string>
+    <string name="dialog_no_goto_2shot_text">先にログインされている\n会員様がいらっしゃるので\n2SHOTの申し込みはできません。</string>
+    <string name="dialog_2shot_not_connected_text">接続できませんでした</string>
+    <string name="dialog_2shot_not_connected_text_sub">ただいま2SHOTのお誘いをお受けしづらい状況のようです。\n※事前に約束をしておくと2人きりに\nなれる可能性がUPします。</string>
+    <string name="dialog_2shot_mic_text">マイクを使って話しますか？</string>
+    <string name="dialog_2shot_mic_text_sub">2SHOTモードに変わります。</string>
+    <string name="dialog_2shot_cancel_text">2SHOTモードを解除しますか？</string>
+    <string name="dialog_2shot_cancel_text_sub">マイク/ビデオは使用できません。</string>
+    <string name="dialog_2shot_first_time_title">マイクを使って話しますか？</string>
+    <string name="dialog_2shot_first_time_sub">2SHOTモードに変わります。\n（100pts/1分）</string>
+    <string name="dialog_2shot_first_time_not_show_again">今度から表示しない</string>
+    <string name="dialog_2shot_request_again">女の子からの応答がありませんでした\nもう一度2SHOTを申し込みますか？</string>
+    <string name="dialog_cam_eathother_text">カメラを使用してチャットしますか？</string>
+    <string name="dialog_cam_eathother_text_sub">(カメラ利用には350pts消費します)</string>
+    <string name="dialog_call_video_text">のぞき→ビデオ通話に\n移行しますか？</string>
+
+
+    <!--for Toast-->
+    <string name="toast_error_chat_config">情報の取得に失敗しました</string>
+    <string name="toast_error_jetty_connect">接続に失敗しました</string>
+    <string name="toast_error_jetty_onclose">ビデオ通話が終了しました</string>
+    <string name="toast_error_jetty_onerror">接続エラーが発生しました</string>
+    <string name="toast_error_media_disconnect">メディアサーバと切断されました</string>
+    <string name="toast_error_media_play_failed">映像の取得に失敗しました</string>
+    <string name="toast_error_two_shot_reject">2SHOTが拒否されました</string>
+    <string name="toast_error_two_shot_request">2SHOT申請中です</string>
+    <string name="toast_error_two_shot_destroy">2SHOTが解除されました</string>
+    <string name="toast_error_general">処理中にエラーが発生しました</string>
+    <string name="toast_two_shot_success">2SHOTに移行しました</string>
+
+    <!--for permission-->
+    <string name="toast_permission_granted">カメラへのアクセスを許可しました</string>
+    <string name="toast_permission_not_granted">許可されていない機権限があるため、一部の機能が正常にご利用いただけない場合があります</string>
+    <string name="toast_permission_not_granted_forever">アプリ設定から権限を変更する必要があります</string>
+
+    <!--setting dialog-->
+    <string name="micro_volume">あなたの音量</string>
+    <string name="sound_volume">相手の音量</string>
+    <string name="use_microphone">マイク使用</string>
+    <string name="use_camera">カメラ使用</string>
+    <string name="setting_complete">設定完了</string>
+    <string name="two_shot_label">2SHOT時のみ</string>
+    
+    <!--purchase point dialog-->
+    <string name="purchase_point">ポイント購入</string>
+    <string name="purchase_point_not_enough">ポイントが残りわずかとなっており、\n間もなくチャットが終了します。\nポイントを購入してチャットを延長しますか？</string>
+    <string name="purchase_title_header">約%d分間</string>
+    <string name="purchase_title_tail">お話できます</string>
+    <string name="cancel">キャンセル</string>
+    <string name="popular">人気</string>
+    <string name="point_number">+%,dpts</string>
+    <string name="price">¥%,d</string>
+    <string name="dialog_cancel">いいえ</string>
+    <string name="dialog_ok">はい</string>
+    <string name="dialog_first_time_accept">マイクを使う</string>
+    <string name="dialog_first_time_cancel">今は使わない</string>
+    <string name="notice_two_shot_only">2SHOT時のみ</string>
+    <string name="btn_apply_again">もう１度申請する</string>
+    <string name="btn_ok">OK</string>
+
+    <string name="system_performer_name">お知らせ</string>
+    <string name="progress_bar_video_call_text">映像取得中</string>
+
+    <string name="title_chat_log_1">チャットログ</string>
+    <string name="title_chat_log_2">ナイショ話</string>
+    <string name="title_btn_request_2shot">2SHOTお誘い</string>
+    <string name="title_btn_request_call">ビデオ通話切り替え</string>
+
+</resources>

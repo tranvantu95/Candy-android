@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.candy.android.fragment.SMSAuthenticatePhoneFragment"
+    android:background="@color/common_background_color"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/sms_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mission_size_0dp"
+        android:layout_marginRight="@dimen/mission_size_0dp"
+        android:background="@drawable/profile_background"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/tv_enter_phone_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_right_margin"
+            android:layout_marginStart="@dimen/text_left_margin"
+            android:layout_marginTop="@dimen/text_top_large_margin"
+            android:text="@string/enter_your_phone_number"
+            android:textColor="@color/main_tab_text_color_selected"
+            android:textSize="@dimen/common_text_size_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_phone_number_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_enter_phone_title"
+            android:layout_marginStart="@dimen/text_left_margin"
+            android:layout_marginEnd="@dimen/text_right_large_margin"
+            android:layout_marginTop="@dimen/text_top_margin"
+            android:text="@string/phone_number_note"
+            android:textColor="@color/dialog_cancel_trolley_grey"
+            android:textSize="@dimen/common_text_size_11sp" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone_number_note"
+            android:layout_marginLeft="@dimen/text_left_margin"
+            android:layout_marginRight="@dimen/text_left_margin"
+            android:layout_marginTop="@dimen/textbox_top_margin">
+
+            <EditText
+                android:id="@+id/edt_phone_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_edit_text_size_46dp"
+                android:background="@drawable/phone_input_background_2"
+                android:hint="@string/phone_number_hint"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingStart="@dimen/large_padding"
+                android:paddingEnd="@dimen/common_size_36dp"
+                android:textColorHint="@color/common_hint_color_timberwolf"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="@dimen/text_size_medium" />
+
+            <Button
+                android:id="@+id/btn_clear_txt"
+                android:layout_width="@dimen/common_size_25dp"
+                android:layout_height="@dimen/common_size_25dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/common_size_9dp"
+                android:background="@drawable/text_field_clear_btn" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/register"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_size_54dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/text_top_large_margin"
+            android:layout_marginLeft="@dimen/text_left_margin"
+            android:layout_marginRight="@dimen/text_left_margin"
+            android:layout_marginTop="@dimen/sms_margin_top"
+            android:background="@drawable/btn_sms"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/mission_size_24dp"
+            android:paddingRight="@dimen/mission_size_24dp"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:text="@string/register_to_authen"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_big"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sms_top_layout"
+        android:layout_marginTop="@dimen/textbox_top_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/common_size_10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_left_margin"
+                android:text="@string/sms_note_mark"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_left_margin"
+                android:lineSpacingExtra="@dimen/line_spacing_7sp"
+                android:text="@string/sms_authen_explain_1"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mission_size_12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/common_size_10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_left_margin"
+                android:text="@string/sms_note_mark"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_left_margin"
+                android:lineSpacingExtra="@dimen/line_spacing_7sp"
+                android:text="@string/sms_authen_explain_2"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_size_14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/common_size_10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_left_margin"
+                android:text="@string/sms_note_mark"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_left_margin"
+                android:lineSpacingExtra="@dimen/line_spacing_7sp"
+                android:text="@string/sms_authen_explain_3"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mission_size_12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/common_size_10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_left_margin"
+                android:text="@string/sms_note_mark"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/text_left_margin"
+                android:lineSpacingExtra="@dimen/line_spacing_7sp"
+                android:text="@string/sms_authen_explain_4"
+                android:textColor="@color/sms_dim_gray_color"
+                android:textSize="@dimen/text_size_min" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/link_top_margin">
+
+            <TextView
+                android:id="@+id/tv_authen_if_not_perform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/authen_if_not_perform"
+                android:textColor="@color/can_not_use_sms"
+                android:textSize="@dimen/text_size_small"
+                android:letterSpacing="0.1572"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/default_divider_size"
+                android:layout_alignEnd="@id/tv_authen_if_not_perform"
+                android:layout_alignStart="@id/tv_authen_if_not_perform"
+                android:layout_below="@id/tv_authen_if_not_perform"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:background="@color/can_not_use_sms" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

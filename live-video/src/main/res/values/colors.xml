@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b1926</color>
+    <color name="edittext_hint_color">#95949c</color>
+
+    <color name="colorPrimaryDark">#12111a</color>
+    <color name="colorAccent">#fd2080</color>
+    <color name="mainBackground">#1b1926</color>
+    <color name="item_profile_background_selected">#f5f5f5</color>
+    <color name="dialog_grey">#999999</color>
+    <!--setting dialog-->
+    <color name="setting_divider">#dbdbdb</color>
+    <color name="gradient_color_green_start">#03daaf</color>
+    <color name="gradient_color_green_end">#0bdabe</color>
+    <color name="btn_disabled">#DFDFDF</color>
+    <color name="mute_seekbar_color">#bdbdbd</color>
+    <color name="seekbar_tint_color">#00c3a8</color>
+
+    <!--purchase dialog-->
+    <color name="purchase_dialog_background">#2b2938</color>
+    <color name="purchase_divider_color">#474553</color>
+    <color name="himecas_gray">#999999</color>
+    <color name="gradient_color_red_start">#fe206f</color>
+    <color name="gradient_color_red_end">#fc2192</color>
+    <color name="number_point_color">#ff9b00</color>
+
+    <!--Chat log-->
+    <color name="performer_name_color">#f248d5</color>
+    <color name="member_name_color">#0ec6c3</color>
+    <color name="chat_message_color">#ffffff</color>
+</resources>

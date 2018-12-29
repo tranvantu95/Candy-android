@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.candy.android.custom.views.WrapContentViewPager
+        android:id="@+id/campaign_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.candy.android.custom.views.DotIndicator
+        android:id="@+id/view_pager_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_vertical"
+        app:circleColorSelected="@color/gradient_color_red_start"
+        app:circleColorNormal="@color/color_campaign_dotted_color"
+        android:layout_marginBottom="4dp"
+        app:dotSpacing="@dimen/common_size_6dp"
+        app:radius="@dimen/common_size_3dp" />
+</FrameLayout>

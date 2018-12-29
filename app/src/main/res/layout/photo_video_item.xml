@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <include layout="@layout/photo_video_tmb" />
+
+    <ImageView
+        android:id="@+id/play_outline"
+        android:layout_width="@dimen/play_outline_size"
+        android:layout_height="@dimen/play_outline_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_play"
+        android:visibility="gone" />
+
+</RelativeLayout>

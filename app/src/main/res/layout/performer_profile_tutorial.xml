@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/performer_profile_tutorial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.candy.android.custom.views.SquareFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_like"
+            android:layout_width="@dimen/performer_btn_like_width"
+            android:layout_height="@dimen/performer_btn_like_width"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/profile_size_48dp"
+            android:layout_marginEnd="@dimen/common_size_4dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_like" />
+    </com.candy.android.custom.views.SquareFrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <include layout="@layout/performer_profile_bottom_button_layout" />
+    </FrameLayout>
+</FrameLayout>

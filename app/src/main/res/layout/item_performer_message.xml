@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/message_item_height_84dp"
+    android:background="@color/white"
+    android:id="@+id/swipe_reveal_layout"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_size_12dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <FrameLayout
+                android:layout_width="@dimen/fragment_mail_performer_image_width"
+                android:layout_height="@dimen/fragment_mail_performer_image_height">
+
+                <com.candy.android.custom.views.RoundCornerImageView
+                    android:id="@+id/performerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/no_image"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    app:corner="100dp"/>
+
+                <FrameLayout
+                    android:id="@+id/live_status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_live_in_message">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/common_size_5dp"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/live_status_image"
+                            android:layout_width="@dimen/common_size_10dp"
+                            android:layout_height="@dimen/common_size_10dp"
+                            android:src="@drawable/ic_live" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/common_size_2dp"
+                            android:text="@string/live"
+                            android:textSize="@dimen/common_text_size_10sp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_size_6dp"
+                android:layout_marginEnd="@dimen/common_size_24dp">
+
+                <TextView
+                    android:id="@+id/performerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_size_3dp"
+                    android:layout_marginBottom="@dimen/common_size_3dp"
+                    android:textSize="@dimen/common_text_size_14sp"
+                    android:textColor="@color/text_color_profile_3"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:scrollHorizontally="true" />
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/message_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_size_4dp"
+                    android:textSize="@dimen/common_text_size_12sp"
+                    android:textColor="@color/text_color_profile_3"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:scrollHorizontally="true" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_size_16dp"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/sendDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/common_size_8dp"
+                android:textSize="@dimen/common_text_size_10sp"
+                android:textColor="@color/dialog_cancel_trolley_grey" />
+
+            <TextView
+                android:id="@+id/n_unread_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_size_2dp"
+                android:layout_marginEnd="@dimen/common_size_5dp"
+                android:paddingStart="@dimen/common_size_6dp"
+                android:paddingEnd="@dimen/common_size_6dp"
+                android:background="@drawable/bg_new_in_message"
+                android:text="@string/str_new"
+                android:textSize="@dimen/common_text_size_10sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_divider_size"
+            android:layout_gravity="bottom"
+            android:background="@color/item_profile_background_selected" />
+    </FrameLayout>
+</FrameLayout>

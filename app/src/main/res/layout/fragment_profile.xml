@@ -1,0 +1,939 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:background="@color/common_background_color_3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mission_size_16dp"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/profile_public_info"
+            android:textColor="@color/text_color_registration"
+            android:textSize="@dimen/profile_text_size_16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/profile_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_size_62dp"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:id="@+id/handle_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="false"
+                    android:layout_marginTop="@dimen/profile_size_18dp"
+                    android:text="@string/profile_nick_name"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/handle_name"
+                    android:layout_marginTop="@dimen/profile_size_2dp"
+                    android:text="@string/profile_name_format"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_color_profile_2"
+                    android:textSize="@dimen/common_text_size_10sp" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/profile_size_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/edit_profile"
+                    android:rotation="180"
+                    android:src="@drawable/_icons_22dp_arrow" />
+
+                <EditText
+                    android:id="@+id/name_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/profile_size_10dp"
+                    android:layout_toStartOf="@id/iv_arrow_name"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="@string/profile_name_hint"
+                    android:inputType="textPersonName"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxWidth="@dimen/profile_size_150dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color" />
+
+            <RelativeLayout
+                android:id="@+id/member_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_size_62dp"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/profile_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/profile_image_title"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/profile_size_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/edit_profile"
+                    android:rotation="180"
+                    android:src="@drawable/_icons_22dp_arrow" />
+
+                <com.candy.android.custom.views.CircleImageView
+                    android:id="@+id/member_image"
+                    android:layout_width="@dimen/profile_size_48dp"
+                    android:layout_height="@dimen/profile_size_48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/profile_size_10dp"
+                    android:layout_toStartOf="@id/iv_arrow_image"
+                    android:src="@drawable/_icons_noimage" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_age"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_size_62dp"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/profile_age"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/profile_size_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/edit_profile"
+                    android:rotation="180"
+                    android:src="@drawable/_icons_22dp_arrow" />
+
+                <TextView
+                    android:id="@+id/age_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/common_size_10dp"
+                    android:layout_toStartOf="@id/iv_arrow_age"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="center|end"
+                    android:text="@string/performer_age"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_blood_group"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_size_62dp"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/profile_blood"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_blood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/profile_size_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/edit_profile"
+                    android:rotation="180"
+                    android:src="@drawable/_icons_22dp_arrow" />
+
+                <TextView
+                    android:id="@+id/tv_blood_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/common_size_10dp"
+                    android:layout_toStartOf="@id/iv_arrow_blood"
+                    android:background="@null"
+                    android:gravity="center|end"
+                    android:text="@string/performer_private"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_size_62dp"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/edit_address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/profile_area"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_arrow_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/profile_size_16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/edit_profile"
+                    android:rotation="180"
+                    android:src="@drawable/_icons_22dp_arrow" />
+
+                <TextView
+                    android:id="@+id/address_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/profile_margin_to_arrow"
+                    android:layout_marginEnd="@dimen/common_size_10dp"
+                    android:layout_toEndOf="@id/edit_address_title"
+                    android:layout_toStartOf="@id/iv_arrow_address"
+                    android:background="@null"
+                    android:gravity="center|end"
+                    android:text="@string/performer_private"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/profile_job_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/job_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/common_size_18dp"
+                        android:text="@string/profile_job"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/job_title"
+                        android:layout_marginTop="@dimen/profile_size_2dp"
+                        android:layout_marginBottom="@dimen/common_size_6dp"
+                        android:background="@null"
+                        android:text="@string/profile_job_format"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/text_size_nano_x" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/mission_size_24dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/job_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_job_layout"
+                    android:layout_marginBottom="@dimen/common_size_13dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:textColor="@color/text_color_default"
+                    android:gravity="top|start"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:lineSpacingExtra="@dimen/line_spacing_5sp"
+                    android:maxLength="32"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_typeWoman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/type_woman_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/typeWoman_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/common_size_18dp"
+                        android:text="@string/profile_type_women"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/typeWoman_title"
+                        android:layout_marginTop="@dimen/profile_size_2dp"
+                        android:layout_marginBottom="@dimen/common_size_6dp"
+                        android:background="@null"
+                        android:text="@string/profile_type_women_format"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/text_size_nano_x" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/mission_size_24dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/typeWoman_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/type_woman_layout"
+                    android:layout_marginBottom="@dimen/common_size_13dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top|start"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_default"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_pet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/profile_pet_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pet_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/common_size_18dp"
+                        android:text="@string/profile_pet"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pet_title"
+                        android:layout_marginTop="@dimen/profile_size_2dp"
+                        android:layout_marginBottom="@dimen/common_size_6dp"
+                        android:background="@null"
+                        android:text="@string/profile_pet_format"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/text_size_nano_x" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/mission_size_24dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/pet_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_pet_layout"
+                    android:layout_marginBottom="13dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top|start"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:lineSpacingExtra="@dimen/line_spacing_5sp"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_default"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_geek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/profile_geek_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/geek_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/common_size_18dp"
+                        android:text="@string/profile_geek"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/geek_title"
+                        android:layout_marginTop="@dimen/profile_size_2dp"
+                        android:layout_marginBottom="@dimen/common_size_6dp"
+                        android:background="@null"
+                        android:text="@string/profile_geek_format"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/text_size_nano_x" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/mission_size_24dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/geek_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_geek_layout"
+                    android:layout_marginBottom="@dimen/common_size_13dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top|start"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_default"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_onlyOneWish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/profile_one_wish_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/onlyOneWish_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/common_size_18dp"
+                        android:text="@string/profile_onlyOneWish"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/onlyOneWish_title"
+                        android:layout_marginTop="@dimen/profile_size_2dp"
+                        android:layout_marginBottom="@dimen/common_size_6dp"
+                        android:background="@null"
+                        android:text="@string/profile_oneWish_format"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/text_size_nano_x" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/mission_size_24dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/onlyOneWish_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_one_wish_layout"
+                    android:layout_marginBottom="@dimen/common_size_13dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top|start"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_default"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_engrossed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/profile_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/profile_engrossed_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/engrossed_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/common_size_18dp"
+                        android:text="@string/profile_engrossed"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/engrossed_title"
+                        android:layout_marginTop="@dimen/profile_size_2dp"
+                        android:layout_marginBottom="@dimen/common_size_6dp"
+                        android:background="@null"
+                        android:text="@string/profile_engrossed_format"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/text_size_nano_x" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/mission_size_24dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/engrossed_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_engrossed_layout"
+                    android:layout_marginBottom="@dimen/common_size_13dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top|start"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLength="20"
+                    android:textColor="@color/text_color_default"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/edit_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/profile_message_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/message_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/common_size_18dp"
+                        android:text="@string/profile_message"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/message_title"
+                        android:layout_marginTop="@dimen/profile_size_2dp"
+                        android:layout_marginBottom="@dimen/common_size_6dp"
+                        android:background="@null"
+                        android:text="@string/profile_message_format"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/common_text_size_10sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="false"
+                        android:layout_marginTop="@dimen/mission_size_24dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/message_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_message_layout"
+                    android:layout_marginBottom="@dimen/common_size_13dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:gravity="top|start"
+                    android:inputType="textNoSuggestions|textMultiLine"
+                    android:maxLength="50"
+                    android:maxLines="3"
+                    android:textColor="@color/text_color_default"
+                    android:textColorHint="@color/text_color_profile_2"
+                    android:textSize="@dimen/profile_text_size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mission_size_16dp"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:layout_marginTop="@dimen/mission_size_16dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/profile_private_info"
+            android:textColor="@color/text_color_registration"
+            android:textSize="@dimen/profile_text_size_16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/profile_size_16dp"
+            android:background="@drawable/profile_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_size_62dp"
+                android:layout_marginStart="@dimen/profile_size_16dp"
+                android:background="@drawable/profile_item_background_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:text="@string/profile_code"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/mission_size_48dp"
+                    android:background="@null"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_size_62dp"
+                android:layout_marginStart="@dimen/profile_size_16dp"
+                android:background="@drawable/profile_item_background_selector"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:text="@string/profile_current_point"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_color_profile"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_current_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/mission_size_48dp"
+                    android:background="@null"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+
+            <RelativeLayout
+                android:id="@+id/btn_change_email_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:background="@drawable/profile_item_background_selector">
+
+                <RelativeLayout
+                    android:id="@+id/tv_mail_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_profile_mail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_size_23dp"
+                        android:background="@null"
+                        android:text="@string/profile_mail_part"
+                        android:textColor="@color/text_color_profile"
+                        android:textSize="@dimen/text_size_medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_profile_mail_title"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:lineSpacingExtra="@dimen/line_spacing_3sp"
+                        android:text="@string/profile_mail_note"
+                        android:textColor="@color/text_color_profile_2"
+                        android:textSize="@dimen/common_text_size_10sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/profile_size_16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/profile_size_30dp"
+                        android:contentDescription="@string/edit_profile"
+                        android:rotation="180"
+                        android:src="@drawable/_icons_22dp_arrow" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_mail_adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_mail_layout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/common_size_13dp"
+                    android:layout_marginTop="@dimen/common_size_6dp"
+                    android:background="@null"
+                    android:lineSpacingExtra="@dimen/line_spacing_5sp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/text_color_profile_3"
+                    android:textSize="@dimen/text_size_medium" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_default_color" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_size_48dp"
+            android:gravity="center"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/menu_logout_underline"
+                android:textColor="@color/text_color_profile_3"
+                android:textSize="@dimen/text_size_medium" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_divider_size"
+            android:background="@color/divider_default_color"
+            android:layout_marginBottom="@dimen/common_size_24dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color_3"
+    android:clickable="true"
+    tools:context=".fragment.mail.registration.FragmentProfileRegisterConfirming">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/ns_register_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line_divider"
+        android:layout_marginTop="@dimen/mission_size_8dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/mission_size_16dp"
+            android:paddingStart="@dimen/mission_size_16dp"
+            android:paddingTop="@dimen/mission_size_24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.candy.android.custom.views.RoundCornerImageView
+                    android:id="@+id/ask_name_image"
+                    android:layout_width="@dimen/fragment_profile_register_performer_image_size"
+                    android:layout_height="@dimen/fragment_profile_register_performer_image_size"
+                    android:src="@drawable/rize4_confirm" />
+
+                <TextView
+                    android:id="@+id/name_name_profile_be_created"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/common_size_4dp"
+                    android:layout_marginStart="@dimen/common_size_4dp"
+                    android:background="@drawable/combined_shape"
+                    android:lineSpacingExtra="@dimen/line_spacing_4sp"
+                    android:paddingEnd="@dimen/mission_size_16dp"
+                    android:paddingStart="@dimen/common_size_25dp"
+                    android:paddingTop="@dimen/common_size_14dp"
+                    android:text="@string/fragment_profile_register_final"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/pink_button_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_size_56dp"
+                android:layout_marginTop="@dimen/mission_size_24dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/mission_size_8dp"
+                android:paddingStart="@dimen/mission_size_8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/frame_margin_small"
+                    android:layout_marginStart="@dimen/frame_margin_small"
+                    android:text="@string/str_nick_name"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/common_text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_nick_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_color_registration" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/mission_size_8dp"
+                android:paddingStart="@dimen/mission_size_8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_you_live"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/common_text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_you_live"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/common_text_size_14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_size_56dp"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/mission_size_8dp"
+                android:paddingStart="@dimen/mission_size_8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_age"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/common_text_size_14sp" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_color_registration"
+                    android:textSize="@dimen/common_text_size_14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:background="@color/divider_custom_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_size_56dp"
+                android:layout_marginEnd="@dimen/mission_size_8dp"
+                android:layout_marginStart="@dimen/mission_size_8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_profile_image"
+                    android:textColor="@color/text_color_default" />
+
+                <com.meg7.widget.CircleImageView
+                    android:id="@+id/img_avatar"
+                    android:layout_width="@dimen/common_size_40dp"
+                    android:layout_height="@dimen/common_size_40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/_icons_noimage" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_divider_size"
+                android:layout_marginBottom="@dimen/common_size_37dp"
+                android:background="@color/divider_custom_color" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/line_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_divider_size"
+        android:layout_above="@+id/ll_bottom_button"
+        android:background="@color/divider_custom_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/common_size_14dp"
+            android:layout_marginTop="@dimen/common_size_14dp"
+            android:text="@string/fragment_profile_register_name_profile_can_be_changed_later"
+            android:textColor="@color/text_color_registration"
+            android:textSize="@dimen/activity_login_forgot_pwd_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_size_54dp"
+            android:layout_marginBottom="@dimen/mission_size_24dp"
+            android:layout_marginEnd="@dimen/common_size_28dp"
+            android:layout_marginStart="@dimen/common_size_28dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_to_correct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dialog_confirm_button_margin"
+                android:layout_marginRight="@dimen/dialog_confirm_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cancel_grey_rounded_corner"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/dialog_content_padding"
+                android:text="@string/str_to_correct"
+                android:textColor="@color/dialog_cancel_trolley_grey"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_complete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dialog_confirm_button_margin"
+                android:layout_marginStart="@dimen/dialog_confirm_button_margin"
+                android:layout_weight="1"
+                android:background="@drawable/btn_mission_clear_red_shadowed"
+                android:gravity="center"
+                android:padding="@dimen/dialog_content_padding"
+                android:text="@string/str_completion"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

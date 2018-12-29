@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:paddingBottom="24dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/mission_start_header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="24dp"
+            android:background="@drawable/relative_bottom_rounded"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mission_start_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ログイン情報を登録しよう"
+                android:textColor="@color/mission_green_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mission_start_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="6sp"
+                android:text="メールアドレスとパスワードを登録して、 ログアウトしても再度ログインできるように しましょう。"
+                android:textColor="@color/text_color_profile"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mission_start_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/mission_start_hint"
+                android:textColor="@color/mission_green_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mission_start_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="6sp"
+                android:text="大切なアカウント情報を守るために必ず登録 しましょう。"
+                android:textColor="@color/text_color_profile"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_mission_start_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="18dp"
+                android:background="@drawable/bg_btn_green"
+                android:text="@string/notice_dialog_default_ok"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

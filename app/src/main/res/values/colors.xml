@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1b1926</color>
+
+    <color name="colorPrimaryDark">#12111a</color>
+    <color name="colorAccent">#f248d5</color>
+
+    <color name="dim_black">#D0000000</color>
+    <color name="darker_gray">#AAAAAA</color>
+    <color name="divider_default_color">#eeeeee</color>
+    <color name="divider_custom_color">#80e6e6e2</color>
+    <color name="divider_custom_color_2">#ffe6e6e2</color>
+    <color name="divider_custom_color_3">#ffd8d8d8</color>
+    <color name="divider_custom_color_4">#ebebeb</color>
+
+    <color name="text_select_image_color">#434343</color>
+    <color name="btn_disabled">#DFDFDF</color>
+    <color name="crimson">#F31F6F</color>
+    <color name="himecas_gray">#999999</color>
+    <color name="text_color_default">#444444</color>
+    <color name="text_color_profile">#ff291736</color>
+    <color name="text_color_profile_2">#ff808080</color>
+    <color name="text_color_profile_3">#ff483b52</color>
+    <color name="text_color_registration">#ff444444</color>
+    <color name="color_yellow">#ffff00</color>
+
+    <color name="black_a125">#7D000000</color>
+
+    <!-- Gallery color -->
+    <color name="directory_background_color">#26000000</color>
+
+    <!--Common colors-->
+    <color name="dialog_grey">#999999</color>
+    <color name="dialog_cancel_trolley_grey">#ff7f7784</color>
+    <color name="common_title_color">#ff483b52</color>
+
+    <!--Like Button Color-->
+    <color name="like_button_color">#ff7f7784</color>
+    <color name="like_button_selected_color">#fff772e5</color>
+
+    <!-- Point -->
+    <color name="purchase_point_cancel_button">#97949c</color>
+    <color name="point_description_color">#07dab6</color>
+
+    <!--Common color-->
+    <color name="common_background_color">#eeeeee</color>
+    <color name="common_background_color_2">#ffffedfc</color>
+    <color name="common_background_color_3">#fffffafe</color>
+    <color name="common_border_item_list">#dddddd</color>
+    <color name="common_border_item_list_2">#fff2f2f2</color>
+    <color name="can_not_use_sms">#483b52</color>
+    <color name="common_hint_color_timberwolf">#ffd8d8d8</color>
+
+    <!-- Blog tab color -->
+    <color name="blog_page_tab_color">#fff248d5</color>
+
+    <!--Performer List-->
+    <color name="search_performer_checkbox_border">#caccd2</color>
+    <color name="range_seek_bar_active_color">#ff2adbd7</color>
+
+    <!--Performer Profile-->
+
+    <!--Online status colors-->
+    <color name="status_call_waiting">#f7b14d</color>
+    <color name="status_calling">#03840c</color>
+    <color name="status_two_shot">#e882ec</color>
+    <color name="status_message_wait">#ffe1b7</color>
+    <color name="status_default">#ffffff</color>
+
+    <!--Online status colors transparent: use in PerformerProfileActivity-->
+
+
+    <!--Favorite/ UnFavorite-->
+    <color name="un_favorite_border_color">#fe206f</color>
+    <color name="un_favorite_border_color_selected">#9e1445</color>
+    <color name="favorite_delete_button_background">#ffdf0011</color>
+
+
+    <!--Block-->
+    <color name="toolbar_title">#291837</color>
+    <color name="divider_toolbar_tabs">#33313d</color>
+    <color name="bg_screen">#eeeeee</color>
+    <color name="activity_login_bg_edit_text_focused">#fffffafe</color>
+    <color name="activity_login_bg_edit_text_border">#bdbdbd</color>
+    <color name="activity_login_bg_edit_text_border_focused">#fff771dd</color>
+    <color name="activity_login_edit_text_hint_color">#999999</color>
+
+    <color name="gradient_color_pink_start">#fa4fd6</color>
+    <color name="gradient_color_pink_end">#f53ffd</color>
+    <color name="gradient_color_red_start">#fff771dd</color>
+    <color name="gradient_color_red_end">#fff772e8</color>
+    <color name="gradient_color_orange_start">#ff9800</color>
+    <color name="gradient_color_orange_end">#ffb700</color>
+    <color name="gradient_color_blue_start">#31c1f7</color>
+    <color name="gradient_color_blue_end">#30ddff</color>
+    <color name="gradient_color_green_start">#ff2adbd8</color>
+    <color name="gradient_color_green_end">#ff2adbc3</color>
+    <color name="sms_button_color">#ffc526</color>
+    <color name="mission_title_color">#ff291736</color>
+    <color name="mission_green_color">#ff0ec6c3</color>
+    <color name="sms_dim_gray_color">#ff666666</color>
+
+    <color name="gradient_transparent_color_pink_start">#bffa4fd6</color>
+    <color name="gradient_transparent_color_pink_end">#bff53ffd</color>
+    <color name="gradient_transparent_color_red_start">#bffe206f</color>
+    <color name="gradient_transparent_color_red_end">#bffc2192</color>
+    <color name="gradient_transparent_color_orange_start">#bfff9800</color>
+    <color name="gradient_transparent_color_orange_end">#bfffb700</color>
+    <color name="gradient_transparent_color_blue_start">#bf31c1f7</color>
+    <color name="gradient_transparent_color_blue_end">#bf30ddff</color>
+    <color name="gradient_transparent_color_green_start">#bf03daaf</color>
+    <color name="gradient_transparent_color_green_end">#bf0bdabe</color>
+    <color name="gradient_transparent_color_live_start">#bffc2124</color>
+    <color name="gradient_transparent_color_live_end">#bffc2149</color>
+
+    <color name="switch_background_off">#ffd8d8d8</color>
+    <color name="switch_track_start">#29d9d6</color>
+    <color name="switch_track_end">#29d5be</color>
+    <color name="bg_color_main_frame">#fff</color>
+    <color name="gray_popup">#979797</color>
+    <color name="gray_message_popup">#565656</color>
+
+    <!--Image crop-->
+    <color name="tmb_background">#ff222222</color>
+
+    <color name="actionbar_color">#1b1926</color>
+    <color name="background_color">#111111</color>
+
+    <!--calendar view-->
+
+    <!--Performer Profile-->
+    <color name="performer_profile_background">@color/white</color>
+    <color name="text_call_video_disable">#57565d</color>
+    <color name="item_profile_background_selected">#f5f5f5</color>
+    <color name="profile_color_short_message">#333333</color>
+
+    <!--Dialog campaign-->
+    <color name="color_campaign_dotted_color">#66000000</color>
+    <color name="color_campaign_title">#fcfc26</color>
+    <color name="color_campaign_title_divider">#dddd25</color>
+    <color name="bg_color_performer_typing">#99eeeeee</color>
+    <color name="bg_campaign_color">#99000000</color>
+    <color name="bg_72hour_color">#9c000000</color>
+    <color name="divider_heavy_color">#caccd2</color>
+    <color name="text_name_popup_color">#fd2181</color>
+    <color name="web_view_background">#ededed</color>
+    <!--Guide screen-->
+    <color name="dotted_indicator_color">@color/gray</color>
+    <color name="dotted_indicator_color_selected">@color/colorPrimary</color>
+    <color name="guide_button_text">#FFFFFF</color>
+    <color name="guide_background">#FFF0E1</color>
+    <color name="guide_bg_author_color">#4C4844</color>
+    <color name="grey">#757575</color>
+    <color name="black">#000000</color>
+    <color name="grey_light">#C7C4C1</color>
+    <color name="gray">#463C32</color>
+    <color name="gray_light">#463B32</color>
+    <color name="white">#ffffff</color>
+    <color name="pink">#e45671</color>
+    <color name="red">#F55032</color>
+    <color name="red_light">#FF5A3C</color>
+    <color name="orange">#eba61d</color>
+    <color name="orange_light">#eed9b4</color>
+    <color name="orange_dark">#FF7846</color>
+    <color name="brown">#bcaaa4</color>
+    <color name="brown_light">#efdcd5</color>
+
+    <!--Main Tab-->
+    <color name="main_tab_text_color_selected">#483b52</color>
+    <color name="main_tab_text_color_normal">#d8d8d8</color>
+
+    <!--dialog search-->
+    <color name="dialog_search_color_border">#979797</color>
+    <color name="dialog_search_color_text">#ff291736</color>
+    <color name="dialog_search_color_hint">#ff7f7784</color>
+
+    <!--Ranking color-->
+    <color name="btn_goto_start">#50372f</color>
+    <color name="gradient_yellow_start">#ffffc526</color>
+    <color name="gradient_yellow_end">#ffffce25</color>
+    <color name="yellow_daily">#ffffc600</color>
+
+    <!-- tutorial-->
+    <color name="tutorial_btn_yellow">#ffff00</color>
+    <color name="tutorial_btn_pink">#f248d5</color>
+    <color name="black_transparent">#7F000000</color>
+</resources>

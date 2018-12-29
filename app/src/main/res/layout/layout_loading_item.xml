@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ProgressBar
+        android:id="@+id/loadmore_progress"
+        android:layout_width="@dimen/mission_size_24dp"
+        android:layout_height="@dimen/mission_size_24dp"
+        android:indeterminateDrawable="@drawable/progressbar_custom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_profile"
+        android:text="@string/blog_list_loading"
+        android:layout_toEndOf="@id/loadmore_progress"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/common_size_2dp" />
+</RelativeLayout>

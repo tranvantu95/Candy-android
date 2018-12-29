@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:contentDescription="@string/str_back"
+                android:src="@drawable/ic_action_up_new"
+                android:background="?android:selectableItemBackground" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:contentDescription="@string/str_search"
+                android:src="@drawable/ic_search"
+                android:background="?android:selectableItemBackground"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <!-- layout for title item on action bar -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/screen_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="@dimen/toolbar_max_width_160dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/home_title"
+                android:textColor="@color/toolbar_title"
+                android:textSize="@dimen/text_toolbar_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/performer_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/toolbar_max_width_160dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/toolbar_title"
+                android:textSize="@dimen/age_toolbar_size" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/btn_add_point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@dimen/common_size_18dp"
+            android:paddingStart="@dimen/common_size_16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/common_size_20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_point"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/common_size_2dp"
+                android:paddingEnd="@dimen/common_size_8dp"
+                android:paddingStart="@dimen/common_size_4dp"
+                android:paddingTop="@dimen/common_size_2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_point" />
+
+                <TextView
+                    android:id="@+id/n_pts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|end"
+                    android:lines="1"
+                    android:minWidth="@dimen/toolbar_min_width_40dp"
+                    android:text="@string/action_bar_n_pts"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_text_size_11sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

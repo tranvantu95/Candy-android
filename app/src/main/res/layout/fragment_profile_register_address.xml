@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffffafe"
+    android:clickable="true"
+    tools:context=".fragment.mail.registration.FragmentProfileRegisterAddress">
+
+    <LinearLayout
+        android:id="@+id/ll_register_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mission_size_8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mission_size_24dp"
+        android:paddingEnd="@dimen/mission_size_16dp"
+        android:paddingStart="@dimen/mission_size_16dp"
+        android:paddingTop="@dimen/mission_size_24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.candy.android.custom.views.RoundCornerImageView
+                android:id="@+id/ask_name_image"
+                android:layout_width="@dimen/fragment_profile_register_performer_image_size"
+                android:layout_height="@dimen/fragment_profile_register_performer_image_size"
+                android:src="@drawable/rize4_address" />
+
+            <TextView
+                android:id="@+id/tv_register_address_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/common_size_5dp"
+                android:background="@drawable/combined_shape"
+                android:lineSpacingExtra="@dimen/line_spacing_4sp"
+                android:paddingEnd="@dimen/mission_size_16dp"
+                android:paddingStart="@dimen/common_size_25dp"
+                android:paddingTop="@dimen/common_size_14dp"
+                android:text="@string/fragment_profile_register_address_question"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/common_text_size_16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/input_address"
+            style="@style/Login_EditText_Style_2"
+            android:layout_marginTop="@dimen/mission_size_24dp"
+            android:gravity="center_vertical"
+            android:hint="@string/fragment_profile_register_address_hint"
+            android:paddingEnd="@dimen/common_size_36dp"
+            android:paddingStart="@dimen/mission_size_12dp"
+            android:textColorHint="@color/common_hint_color_timberwolf" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_divider_size"
+        android:layout_below="@+id/ll_register_address"
+        android:background="@color/divider_custom_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/common_size_14dp"
+            android:text="@string/fragment_profile_register_name_profile_can_be_changed_later"
+            android:textColor="@color/text_color_registration"
+            android:textSize="@dimen/activity_login_forgot_pwd_text_size" />
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_size_54dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/mission_size_24dp"
+            android:layout_marginEnd="@dimen/mission_size_16dp"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:background="@drawable/btn_mission_clear_red_shadowed"
+            android:text="@string/fragment_profile_register_name_btn_next"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

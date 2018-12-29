@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="40dp" />
+            <solid android:color="@color/btn_disabled" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle"  >
+            <corners android:radius="40dp" />
+            <gradient
+                android:startColor="@color/gradient_color_red_start"
+                android:endColor="@color/gradient_color_red_end"
+                android:angle="-90"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/btn_mission_clear_red_shadowed" />
+</selector>

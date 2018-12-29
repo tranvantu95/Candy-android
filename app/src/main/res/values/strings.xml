@@ -1,0 +1,536 @@
+<resources>
+    <string name="app_name">Candy</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- start page -->
+    <string name="login">アカウントをお持ちの方はこちら</string>
+    <string name="str_login">ログイン</string>
+    <string name="start">はじめる</string>
+    <string name="app_name_login">ログインフォーム</string>
+    <string name="label_email">メールアドレス</string>
+    <string name="hint_email"> メールアドレス </string>
+    <string name="label_password">パスワード</string>
+    <string name="hint_password"> パスワード </string>
+    <string name="login_hyper_link_forgot_password"><u>パスワードを忘れたら</u></string>
+    <string name="activity_login_register"> 新規登録はこちら </string>
+    <string name="label_re_issue_password">パスワードを忘れた方</string>
+    <string name="btn_re_issue_password">パスワードを再発行</string>
+    <string name="dialog_reissue_pw_hint_email"> メールアドレス </string>
+    <string name="home_title">女の子一覧</string>
+
+    <string name="error_incorrect_email_or_password"> メールアドレスまたは\nパスワードが正しくありません </string>
+    <string name="start_page_dialog_title">利用規約</string>
+    <string name="start_page_dialog_start">はじめる</string>
+    <string name="start_page_not_accept_term">  同意しない</string>
+    <string name="start_page_accept_term">同意する</string>
+    <string name="block_list_screen_title">ブロックリスト</string>
+    <string name="back_again_to_quit_app">もう一度押すとアプリが終了します</string>
+
+    <!--Performer list-->
+    <string name="age">%d歳</string>
+    <string name="name_search">名前検索</string>
+    <string name="new_search">新人検索</string>
+    <string name="chat_state">通話状態</string>
+    <string name="standby">通話待ち</string>
+    <string name="chat">通話中</string>
+    <string name="search_in_this_condition">この条件で検索する</string>
+    <string name="name_search_hint">*名前</string>
+    <string name="is_new">新人</string>
+    <string name="area_undefined">指定なし</string>
+    <string name="no_content_performer_message">検索しましたが該当の女性は見つかりませんでした</string>
+    <string name="no_content_blog_message">投稿しているブログはありません</string>
+    <string name="no_content_follow_message">まだお気に入りがいません</string>
+    <string name="no_content_footprint">自身のプロフィールを閲覧した女性がいません</string>
+    <string name="no_content_block_message">ブロックしている女性はいません</string>
+    <string name="name_random_video_call">ランダム通話</string>
+    <string name="message_short_random_video_call">ランダム通話</string>
+    <string name="dialog_search_age_title">年齢検索</string>
+    <string name="dialog_search_age_hint">22 - 45 歳</string>
+    <string name="dialog_search_age">歳</string>
+    <string name="dialog_search_age_checkbox">ひみつを含む</string>
+    <string name="dialog_search_recommended_girls">オススメの女の子</string>
+    <string name="dialog_search_live_distributed">LIVE配信中</string>
+
+    <!--Performer Profile-->
+    <string name="back">もどる</string>
+    <string name="pts">pts</string>
+    <string name="live">LIVE</string>
+    <string name="favorite">趣味</string>
+    <string name="blood">血液型</string>
+    <string name="infrested_time">出没時間</string>
+    <string name="my_type">性格</string>
+    <string name="job">職業</string>
+    <string name="tall">身長</string>
+    <string name="area">地域検索</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="block_and_report">通報またはブロック</string>
+    <string name="close">閉じる</string>
+    <string name="performer_detail_tab_basic_info">プロフィール</string>
+    <string name="performer_detail_tab_blog">ブログ(%d)</string>
+    <string name="performer_detail_call">ビデオ通話</string>
+    <string name="performer_detail_message">メッセージ</string>
+    <string name="house">住まい</string>
+    <string name="search_no_value">検索しましたが該当の女性は見つかりませんでした</string>
+    <string name="comment_not_entered">コメントが入力されていません</string>
+    <string name="get_free_point_success"> 認証が完了しました。 無料ポイントをご利用ください</string>
+    <string name="not_registered_notice">まだ登録されていません</string>
+    <string name="colon"> : </string>
+    <string name="performer_tall">160cm</string>
+    <string name="infrested_time_text">夕方</string>
+    <string name="performer_job">働く引きこもりです。</string>
+    <string name="performer_favorite">プロ野球観戦・バス釣り・ＵＭＡ・心霊・都市伝説・未確認事件・ゲーム</string>
+    <string name="performer_my_type">おっとり系？のんびりしてるねってよく言われます(*´꒳`*)</string>
+    <string name="performer_private">ひみつ</string>
+    <string name="performer_short_message">この髪色今日で見納めやで〜笑</string>
+    <string name="peep_video_string">のぞき</string>
+    <string name="performer_age">34歳</string>
+
+    <!--ImageView Description-->
+    <string name="next">次へ</string>
+    <string name="edit_profile">edit profile</string>
+
+    <!-- Menu text -->
+    <string name="menu_main_screen_title">メニュー</string>
+    <string name="menu_main_button_point_text">+ 追加</string>
+    <string name="menu_sum_points">所持ポイント：</string>
+    <string name="menu_profile">プロフィール</string>
+    <string name="menu_point">ポイント購入</string>
+    <string name="menu_message">メッセージ</string>
+    <string name="menu_notification">通知設定</string>
+    <string name="menu_footprint">足あと</string>
+    <string name="menu_favorite">お気に入り</string>
+    <string name="menu_block">ブロック一覧</string>
+    <string name="menu_guide_usage">遊び方</string>
+    <string name="menu_guide_fee">料金説明</string>
+    <string name="menu_term">利用規約</string>
+    <string name="menu_private_policy">プライバシーポリシー</string>
+    <string name="menu_faq">お問い合わせ</string>
+    <string name="menu_logout">ログアウト</string>
+    <string name="menu_logout_underline"><u>ログアウト</u></string>
+    <string name="menu_faq2">よくある質問</string>
+    <string name="menu_mission">ミッション</string>
+    <string name="menu_message_unread_number">86</string>
+    <string name="menu_commerce_setting">特定商取引</string>
+
+    <!-- Profile Registration(ProfileRegistrationStep1Fragment) -->
+    <string name="profile_registration">プロフィール登録</string>
+    <string name="profile_registration_prohibited_words">禁止語句が含まれているため\n送信できません</string>
+    <string name="profile_reg_ask_your_name">お名前はなんてお呼びしたらいいですか ?</string>
+    <string name="profile_reg_ask_your_name_hint">お名前(ハンドルネーム)※全角10文字まで</string>
+    <string name="profile_reg_ask_your_old">おいくつですか ?</string>
+
+    <!-- Change Profile (ProfileFragment) -->
+    <string name="my_profile_title">プロフィール</string>
+    <string name="profile_public_info">公開情報</string>
+    <string name="profile_nick_name">ハンドルネーム</string>
+    <string name="profile_job">職業</string>
+    <string name="profile_type_women">タイプの女性</string>
+    <string name="profile_pet">ペットを飼っていますか？</string>
+    <string name="profile_geek">何オタク？</string>
+    <string name="profile_onlyOneWish">ひとつだけ願いが叶うとしたら？</string>
+    <string name="profile_engrossed"> 今ハマっていることは？</string>
+    <string name="profile_image_title">プロフィール画像</string>
+    <string name="profile_name_format">※3～10文字以内で入力してください</string>
+    <string name="profile_job_format">※32文字以下で入力してください</string>
+    <string name="profile_type_women_format">※20文字以下で入力してください</string>
+    <string name="profile_pet_format">※20文字以下で入力してください</string>
+    <string name="profile_geek_format">※20文字以下で入力してください</string>
+    <string name="profile_oneWish_format">※20文字以下で入力してください</string>
+    <string name="profile_engrossed_format">※20文字以下で入力してください</string>
+    <string name="name_empty_message">名前が入カされていません。</string>
+    <string name="profile_age">年齢</string>
+    <string name="profile_blood">血液型</string>
+    <string name="profile_area">お住まい</string>
+    <string name="profile_message">コメント</string>
+    <string name="profile_private_info">非公開情報</string>
+    <string name="profile_code">会員CODE</string>
+    <string name="profile_current_point">現在ポイント</string>
+    <string name="profile_mail">メールアドレス</string>
+    <string name="profile_mail_part">アカウント引継ぎ</string>
+    <string name="profile_mail_note">※未設定のままだと機種変更などでアカウント\n情報は引き継がれません</string>
+    <string name="profile_message_format">※全角50文字、改行･タグ使用不可</string>
+    <string name="profile_can_be_changed_later">プロフィールは後から変更できます。</string>
+    <string name="profile_comment_hint">はじめまして! %sといいます。よろしくお願…</string>
+    <string name="profile_name_hint"> たかし</string>
+    <string name="profile_job_hint">Job</string>
+    <string name="profile_event_text_format">イベント 1分%dpts</string>
+    <string name="update_profile_success">プロフィールを更新しました。</string>
+    <string name="update_profile_unsuccess">ブロフィールの更新に失敗しました</string>
+    <string name="confirm_pass_not_match">パスワードと確認用パスワードが一致しません</string>
+
+
+    <!-- Change email/password screen-->
+    <string name="change_email_screen_title">メールアドレス設定</string>
+    <string name="change_email_new_email">メールアドレス</string>
+    <string name="change_email_new_password">パスワード</string>
+    <string name="change_email_confirm_new_password">パスワード確認</string>
+    <string name="change_email_save_editted">メールアドレス登録</string>
+
+    <string name="str_send_pwd_to_email">メールを送信しました</string>
+
+    <!--Favorite-->
+    <string name="favorite_screen_title">お気に入り</string>
+    <string name="favorite_chat">メッセージする</string>
+    <string name="remove_performer_favorite_title">この女性をお気に入りから削除しますか？</string>
+    <string name="notice_delete_finish">削除しました。</string>
+    <string name="favorite_delete">削除</string>
+
+
+    <!--Message List-->
+    <string name="btn_delete_message">削除</string>
+    <string name="title_dialog_delete_message">メッセージを削除します。\nよろしいですか？</string>
+    <string name="btn_no_jp">いいえ</string>
+    <string name="btn_yes_jp">はい</string>
+    <string name="recent_message">たった今</string>
+    <string name="meimei_san">みいみい♡</string>
+    <string name="from_person">さんから</string>
+
+    <!--Blocked List-->
+    <string name="blocked_performer_unblock">解除</string>
+    <string name="block_user_notice">ブロック</string>
+    <string name="block_this_user_notice">このユーザーをブロック</string>
+    <string name="block_user_message">ユーザーをブロックすると以下の制限を行います\n
+        ・このユーザーのブログ記事を表示しない\n
+        ・このユーザーを女の子一覧に表示しない\n
+        ・このユーザーのメッセージを受け付けない
+    </string>
+    <string name="block_this_user">ブロックする</string>
+    <string name="report_this_user">通報する</string>
+    <string name="guide_violation_reason">理由</string>
+    <string name="guide_report_performer">規約に違反している配信が確認できた場合は、\nこちらより情報を入力してください。</string>
+    <string name="block_reason_not_violation">違反報告をしない</string>
+    <string name="block_reason_sex">性的なコンテンツ</string>
+    <string name="block_reason_image">暴力的な画像</string>
+    <string name="block_reason_discriminatory">差別的または攻撃的な内容</string>
+    <string name="block_reason_other_issues">その他の問題</string>
+    <string name="block_reason_comment_guide">コメント (100文字以内)</string>
+    <string name="block_reason_comment_hint">こちらに詳細を入力して下さい</string>
+    <string name="block_reason_report">通報</string>
+    <string name="block_reason_principle">※規約に違反していることが確認でき次第対処します。</string>
+    <string name="confirm_dialog_message_del_un_favorite">この女性をブロック解除しますか？</string>
+
+    <!--ReportPerformerFragment-->
+    <string name="report_screen_title">ブロック/通報</string>
+    <string name="confirm_dialog_default_cancel">しない</string>
+    <string name="confirm_dialog_default_ok">解除する</string>
+    <string name="delete">削除する</string>
+    <string name="confirm_dialog_message_block">ブロックしますか？</string>
+    <string name="confirm_dialog_message_report">通報しますか？</string>
+    <string name="notice_dialog_message_block_success">ブロックしました。\n今後この女性は表示されません。</string>
+    <string name="notice_dialog_message_report_success">事務局へ通報しました。\nご協力ありがとうございます。</string>
+    <string name="notice_dialog_default_ok">OK</string>
+    <string name="notice_dialog_default_ok_jp">はい</string>
+    <string name="notice_dialog_message_del_un_favorite_success">解除しました。</string>
+    <string name="report_user_notice">通報</string>
+
+    <!--Notification Settting-->
+    <string name="notification_setting_title">通知設定</string>
+    <string name="notification_setting_email">通知設定（Eメール）</string>
+    <string name="notification_setting_push">通知設定（アプリPUSH通知）</string>
+    <string name="notification_setting_email_magazine">メルマガ受信</string>
+    <string name="notification_setting_email_login">ログイン通知(お気に入り女性)</string>
+    <string name="notification_setting_push_login_notification">ログイン通知(お気に入り女性)</string>
+    <string name="notification_setting_push_message_from_woman">女性からのメッセージ</string>
+    <string name="notification_setting_push_blog_post">ブログ投稿通知(お気に入り女性)</string>
+    <string name="notification_setting_push_new_from_program">番組からのお知らせ</string>
+    <string name="notification_setting_push_reject_time">通知拒否時間</string>
+    <string name="notification_setting_push_hint_time">※常時受信する場合は00:00～00:00に設定</string>
+    <string name="notification_setting_push_hint_time_start">00:00</string>
+    <string name="notification_setting_push_hint_time_end">00:00</string>
+    <string name="notification_setting_push_hint_time_divider">~</string>
+    <string name="notification_setting_push_dialog_change_setting">現在、PUSH通知は送信されない状態です。 通知を受け取るには「設定」から「通知センター」を開き、通知の許可を行ってください。</string>
+    <string name="switch_empty_text">&#160;&#160;</string>
+    <string name="action_bar_n_pts">%,d</string>
+    <string name="action_bar_n_unread">%,d</string>
+    <string name="fragment_change_email_password_term">端末変更やアプリをアンインストールしてしまった場合、新しいアカウントを登録しなおす必要がございます。
+        \nメールアドレス登録しておくことで、現在ご利用のアカウントをそのままお使いいただく事が可能となります。
+        \nまた、複数の端末からもご利用頂けます。
+        \n是非、ご登録下さいませ。</string>
+
+    <!--Image Crop-->
+    <string name="no_permissions_capture">カメラへのアクセスが許可されていません</string>
+    <string name="no_permissions_read_storage">ライブラリへのアクセスが許可されていません</string>
+    <string name="no_permissions_write_storage">ストレージへのアクセスが許可されていないので編集できません</string>
+
+    <string name="crop_save">保存</string>
+    <string name="fragment_menu_logout_term">メールアドレスを登録していない場合、ログアウトすると再度ログインできなくなります。\nアカウント情報やポイントが消失しますのでメールアドレスを登録してください</string>
+    <string name="fragment_menu_log_out">ログアウト</string>
+    <string name="fragment_menu_to_mail_setting">メアド設定する</string>
+    <string name="fragment_profile_register_name_question">お名前は何とお呼びしたらいいですか？</string>
+    <string name="fragment_profile_register_name_hint">*お名前(ハンドルネーム) ※全角10文字まで</string>
+    <string name="fragment_profile_register_birth_hint">1984/01/01</string>
+    <string name="fragment_profile_register_address_hint">ひみつ</string>
+    <string name="fragment_profile_register_name_random_name"><u>おまかせ入力</u></string>
+    <string name="fragment_profile_register_name_profile_can_be_changed_later">プロフィールは後から変更ができます</string>
+    <string name="fragment_profile_register_name_btn_next">次へ</string>
+    <string name="first_last_name" formatted="false">%s%s</string>
+    <string name="fragment_profile_register_birthday_question">おいくつですか？</string>
+    <string name="fragment_profile_register_birthday_format" formatted="false">%d/%02d/%02d</string>
+    <string name="text_invalid_birthday">生年月日を正しく入力してください</string>
+    <string name="fragment_profile_register_address_question">%s歳なんですね！\nどちらにお住まいですか？</string>
+    <string name="fragment_profile_register_avatar_question">あなたの写真も見せてほしいな?スキップしてもOKです。</string>
+    <string name="str_your_picture">あなたの画像</string>
+    <string name="fragment_profile_register_btn_skip">スキップ</string>
+    <string name="fragment_profile_register_final">%sさんの プロフィールができました♪</string>
+    <string name="str_nick_name">ハンドルネーム</string>
+    <string name="str_you_live">お住まい</string>
+    <string name="str_age">年齢</string>
+    <string name="str_profile_image">プロフィール画像</string>
+    <string name="str_completion">完了</string>
+    <string name="str_to_correct">修正する</string>
+
+
+    <!--Blog list fragment-->
+    <string name="blog_list_screen_name">ブログ一覧</string>
+    <string name="fragment_profile_register_change_member_info_failed">サーバとの通信に失敗しました。\nプロフィールは正常に保存されていません。</string>
+    <string name="blog_list_loading">読み込み中</string>
+    <string name="other_blogs_format">他のブログ(%d)</string>
+    <string name="blog_video_waiting_string">ビデオ通話待ち</string>
+    <string name="blog_like_number">345</string>
+
+    <!--SMS Authenticate screen-->
+    <string name="sms_authen_explain_1"> 送信頂きました電話番号は、会員認証のため、当社プライバシーポリ シーに従って利用いたします。第三者へ開示または提供することは一切ありません。</string>
+    <string name="sms_authen_explain_2"> ご自身の携帯電話番号以外の番号は登録しないでください。もし、違反が見られた場合は、退会処分等の措置を行う場合がございます。</string>
+    <string name="sms_authen_explain_3"> 050から始まる番号は対象外となります。予めご了承ください。</string>
+    <string name="sms_authen_explain_4"> CandyはライブでゴーゴーよりOEM提供を受けて運営しています。そのためライブでゴーゴーでSMS認証済みのユーザー様は、本アプリにSMS特典を受けることができません。</string>
+    <string name="enter_your_phone_number">お使いの携帯電話番号を入力してください</string>
+    <string name="enter_your_code">SMSで届いた番号を入力してください</string>
+    <string name="phone_number_note">※半角数字、ハイフン無しで入力してください。</string>
+    <string name="code_note">※半角数字6桁で入力してください。</string>
+    <string name="phone_number_hint">例)09012345678</string>
+    <string name="code_hint">例)123456</string>
+    <string name="authen_if_not_perform">SMS認証を行わない方はこちら</string>
+    <string name="register_to_authen">登録して認証する</string>
+    <string name="authenticate">認証する</string>
+    <string name="authentication_error">サーバとの通信に失敗しました。</string>
+    <string name="sms_dialog_title"> 入力して頂いた電話番号宛に SMSを送付しております。</string>
+    <string name="sms_dialog_message">SMSに記載された6桁の番号をご確認の上、入力してください。</string>
+    <string name="sms_note_mark">*</string>
+
+    <string name="fragment_mail_line_enter_your_message_hint"><font size="12">こんにちは、ビデオ通話しませんか？</font></string>
+    <string name="fragment_mail_line_send_messaage">送信</string>
+    <string name="dialog_point_missing_title">ポイントが不足しています。</string>
+    <string name="dialog_point_missing_i_will_not_buy_it_now">今は買わない</string>
+    <string name="btn_free">無料</string>
+    <string name="dialog_point_missing_get_for_free_1">無料</string>
+    <string name="dialog_point_missing_get_for_free_2">でポイントGET！</string>
+    <string name="btn_buy">%,d円</string>
+    <string name="dialog_point_missing_n_pts">(%,dpts)</string>
+    <string name="dialog_point_missing_n_free_pts">(1,000pts)</string>
+    <string name="dialog_point_missing_buy_1">メッセージ%d通</string>
+    <string name="dialog_point_missing_buy_2">お試し！</string>
+    <string name="dialog_point_missing_buy_3">約%d分</string>
+    <string name="dialog_point_missing_buy_4">お話できる!</string>
+    <string name="fragment_mail_line_im_waiting_your_message">あなたのメッセージを待ってます。</string>
+    <string name="fragment_mail_line_str_three_free_trial_message_can_be_sent">お試しで%d通無料送信できます！</string>
+    <string name="fragment_mail_line_str_three_free_send_message_and_get_along">メッセージを送信して仲良くなろう！</string>
+    <string name="fragment_mail_line_str_is_delete_mail_ok">このメッセージを削除しますか？\n※女の子側のメッセージは削除されません。</string>
+
+    <!--SMS Authentication-->
+    <string name="get_free_point">無料ポイントGET</string>
+
+    <string name="str_new">New</string>
+    <string name="cancel">キャンセル</string>
+    <string name="str_back">Back</string>
+    <string name="str_search">Search</string>
+    <string name="screen_title_str_age" formatted="false">%d歳</string>
+    <string name="can_not_connect_to_server">サーバーとの通信に失敗しました。\n通信環境の良いところで再接続してください。</string>
+    <string name="retry">再接続</string>
+    <string name="custom_appbar_scrolling_view_behavior">com.candy.android.custom.CustomScrollingViewBehavior</string>
+
+    <!--Dialog campaign-->
+    <string name="event_now">開催中のイベント</string>
+    <string name="event_today">本日開催のイベント</string>
+    <string name="event_soon">近日開催のイベント</string>
+    <string name="date_and_time">【開催日時】</string>
+    <string name="event_content">【イベント内容】</string>
+    <string name="title">Title</string>
+    <string name="message">Message</string>
+    <string name="button_start">Button Start</string>
+    <string name="button_end">Button End</string>
+    <string name="campaign_title">期間限定半額キャンペーン</string>
+    <string name="campaign_date_time">10月26日(水) 午前0時以降に購入履歴がある会員様</string>
+    <string name="campaign_evemt_content">
+        チャット終了後に詳細ページ内のフォームからご申請頂くと、直前のチャットでの消費ポイントの30％が還ってきます！</string>
+
+    <!--Dialog notice-->
+    <string name="change_pass_success_title">登録が完了しました。</string>
+    <string name="change_pass_success_message">ログインしなおしてください。</string>
+    <string name="add_point_error_message">Have problem when add point, point will add for you later!</string>
+
+    <!--Reissue password dialog-->
+    <string name="input_mail_invalid">メールアドレスが不正なメールアドレスです</string>
+    <string name="email_address_not_input">メールアドレスが入カされていません</string>
+    <string name="str_unable_to_pick_this_image">画像の読み込みに失敗しました</string>
+    <string name="fragment_mail_line_performer_is_typing">%sさんが入力中...</string>
+    <string name="fragment_mail_list_str_i_dont_have_message">まだメッセージがありません</string>
+    <string name="fragment_profile_register_str_name_not_entered">名前が入力されていません。</string>
+    <string name="str_app_has_newer_version">最新版にアップデートしてご利用ください。</string>
+    <string name="fragment_mail_line_remove_chosen_image_confirming">この画像の添付を解除しますか？</string>
+    <string name="fragment_profile_registration_title">プロフィール登録</string>
+    <string name="select_image_from_gallery">ギャラリーから選ぶ</string>
+    <string name="take_picture">写真を撮る</string>
+    <string name="free_point">freepoint</string>
+    <string name="str_delete_ok">削除する</string>
+
+    <!--app links-->
+    <string name="himecas_iap_host">buy.point</string>
+    <string name="himecas_web_scheme">candy</string>
+    <string name="himecas_web_host">link</string>
+
+    <string name="deep_link_profile">candy://profile</string>
+    <string name="deep_link_blocked">candy://blocked</string>
+
+    <string name="app_link_scheme">candy</string>
+    <string name="app_link_host_web">link</string>
+    <string name="app_link_host_adjust">adjust</string>
+    <string name="app_link_host_trial">trial</string>
+    <string name="app_link_host_mission">mission</string>
+    <string name="app_link_host_sms">sms</string>
+    <string name="app_link_host_purchase">purchase</string>
+    <string name="app_link_host_performer">performer</string>
+    <string name="app_link_host_beginner">beginner</string>
+    <string name="app_link_host_menu">menu</string>
+
+    <!-- Web view -->
+    <string name="web_restore">リストア</string>
+
+    <!--Gallery-->
+    <string name="gallery_title">ギャラリー</string>
+    <string name="str_cancel_attachment">添付を解除</string>
+    <string name="number_picker_decision">決定</string>
+    <string name="str_iab_should_update_google_play">Google Play ストアの最新版をインストールして下さい。</string>
+    <string name="menu_inquisite_history">お問い合わせ</string>
+    <string name="menu_faq_2">FAQ</string>
+    <string name="fragment_mail_line_re_send_message_prompt">メッセージの送信に失敗しました。\n再送信しますか？</string>
+    <string name="str_retransmission">再送信</string>
+
+    <!--Push notification suffix-->
+    <string name="nfc_performer_name_chat_suffix">ちゃんからメールを受信</string>
+    <string name="nfc_performer_name_blog_suffix">ちゃんがツイートを投稿しました</string>
+
+
+    <!--Start Screen-->
+    <string name="register_failed">アカウント作成時にエラーが発生しました\n最初からやり直してください</string>
+
+    <!--Purchase error-->
+    <string name="purchase_point_textview1"><![CDATA[<b><font color=#fe206f>ポイント購入を行った際に正常にポイントが追加されなかった場合</font></b>は、このリストアボタンを押してポイント追加をリクエストすることができます。]]></string>
+    <string name="purchase_point_textview2">これによってあらたな請求が発生することはありません。</string>
+    <string name="purchase_point_failed">決済が正常に完了しなかった可能性があります。ポイントが反映されない場合、お手数ですが事務局にお問い合わせください。</string>
+    <string name="purchase_point_retry_success">ポイント追加のリクエストを行いました。まだポイントが正常に追加されない場合、お手数ですが事務局にお問い合わせください。</string>
+    <string name="purchase_point_retry_failed">ポイント追加のリクエストが正常に完了しなかった可能性があります。少し時間をおいて再度お試しください。</string>
+    <string name="purchase_point_member_code_zero_title">ポイント購入に失敗しました。</string>
+    <string name="purchase_point_member_code_zero_message">お手数ですが、アプリを再起動してやり直してください。</string>
+
+    <!--Mission-->
+    <string name="mission_screen_title">チャレンジミッション</string>
+    <string name="mission_receive_point">報酬受取</string>
+    <string name="mission_show_detail">詳細確認</string>
+    <string name="mission_uncompleted_title">発生中</string>
+    <string name="mission_completed_title">完了</string>
+    <string name="mission_completed_progress">CLEAR!!</string>
+    <string name="mission_receive_award">報酬を受け取る</string>
+    <string name="mission_receive_award_failed">Receive reward failed</string>
+    <string name="mission_start_hint"><font color="#fe206f">★</font><font>ヒント</font><font color="#fe206f">★</font></string>
+    <string name="no_mission">ミッションがありません</string>
+    <string name="mission_point">pts</string>
+
+    <!--Mail-->
+    <string name="emoji_not_supported">絵文字には対応しておりません\n絵文字を削除して送信してください</string>
+
+    <string name="dialog_random_video_call_title"><![CDATA[<b><font color="#0bdabe" size=16>ランダム通話機能</font></b><font color="#ffffff">で<br> 偶然の出会いを楽しんじゃおう♪</font>]]></string>
+    <string name="dialog_random_video_text_waiting">呼び出し中...</string>
+    <string name="dialog_random_video_text_no_performer">現在通話できる女の子がいません</string>
+    <string name="dialog_random_video_text_call">ランダム通話スタート</string>
+    <string name="already_read">既読</string>
+    <string name="message_body_example_1">Hajime mashite ※お試し無料メールです。</string>
+    <string name="message_body_example_2">こんにちは&#11804;(* &#2385;&#42163; &#2385;*  )&#11805;はじめまして！東海住み23歳の｢ののた｣っていいます( &#758;&#710;&#42163;&#710;&#757; )
+        メールありがとうございます( &#758;˙-˙&#757; )もし良かったら仲良くして下さい
+        (*&#714;&#7509;&#715;*)&#2669; &#2632;&#9829;今日はお仕事お休みですか？&#1641;( ˙&#7887;˙ )&#1782;</string>
+
+    <!-- 72 Hour -->
+    <string name="dialog72_text_title">残り時間</string>
+    <string name="dialog72_button1">購入する</string>
+    <string name="dialog72_button2">今は買わない</string>
+    <string name="dialog72_text_message">ランダム通話で偶然の出会い!!</string>
+
+    <!-- Guide -->
+    <string name="guide_buttonOK">さっそく遊ぶ</string>
+    <string name="head_up_message">メッセージを受信しました</string>
+    <string name="title_activity_credit_purchase">CreditPurchaseActivity</string>
+
+    <!--title bottom navigation-->
+    <string name="title_performer_tab">女の子一覧</string>
+    <string name="title_message_tab">メッセージ</string>
+    <string name="title_blog_tab">女の子ブログ</string>
+    <string name="title_ranking_tab">ランキング</string>
+    <string name="title_favorite_tab"></string>
+    <string name="title_menu_tab">メニュー</string>
+
+    <!--Ranking-->
+    <string name="current_performer_rank">%d位</string>
+    <string name="last_performer_rank">前回%d位</string>
+    <string name="new_rank">NEW</string>
+    <string name="ranking_datetime"> 7月26日(木)18:05現在 </string>
+    <string name="ranking_year_month">2018年7月現在</string>
+    <string name="ranking_week">07月19日(木)〜07月25日(水)</string>
+    <string name="daily">日別</string>
+    <string name="monthly">月間</string>
+    <string name="newcomer">新人</string>
+    <string name="prevDate">前日</string>
+    <string name="nextDate">翌日</string>
+    <string name="prevMonth">前月</string>
+    <string name="nextMonth">翌月</string>
+    <string name="naoko_name">なおこ☆☆☆</string>
+
+    <!-- tutorial -->
+    <string name="back1">前へ</string>
+    <string name="fragment_step1_txt1">１分でわかるCandyの使い方</string>
+    <string name="fragment_step1_txt2">この度は Candy をダウンロードして頂きありがとうございます！</string>
+    <string name="fragment_step1_txt3">Candyは、メッセージや音声通話・ビデオ通話を通じて、相手と仲良く楽しくお話をすることができるアプリです。</string>
+    <string name="go_to_main_screen">お相手を選ぶページに移動する</string>
+    <string name="go_to_get_free_point">無料ポイントをGETする</string>
+
+
+    <string name="fragment_step1">
+          <![CDATA[
+            主な楽しみかたはこちらの3つ。<br/><br/>
+                <font color="#f248d5"> <b>➀無料プロフィール観覧</b></font><br/>
+                <font color="#f248d5"> <b>➁メッセージでやりとり</b></font><br/>
+                <font color="#f248d5"> <b>➂音声・ビデオ通話でお話する</b></font><br/><br/>
+            プロフィールの観覧は無制限なので、好みのお相手が見つかるまで、思う存分観覧をお楽しみ下さい☆
+         ]]>
+    </string>
+
+    <string name="fragment_step2"><![CDATA[ お相手の探し方は簡単♪
+                                                    <br/>いま開いている<font color="#f248d5">「女の子一覧」</font>ページで好きなお相手をタップ!
+                                                    <br/><br>すると、そのお相手のプロフィールが表示されるので、しっかりチェックしてくださいね＾＾]]></string>
+    <string name="fragment_step3"><![CDATA[こちらは<font color="#f248d5">「メッセージ」</font>機能です。<br>
+                                                    好きなお相手からのメッセージの確認や、画像や文字で返事ができます。]]></string>
+    <string name="fragment_step4"><![CDATA[そしてこちらが<font color="#f248d5">「女の子ブログ」</font>ページ。 カテゴリごとにブログが分かれています。<br/>気になる女の子のブログをチェックしてみましょう。]]></string>
+    <string name="fragment_step5"><![CDATA[<font color="#f248d5">「ランキング」</font>ページでは、今人気のある人を「日別・月間・新人」と、カテゴリごとにチェックできます。]]></string>
+    <string name="fragment_step6"><![CDATA[最後は<font color="#f248d5">「メニュー」</font>ページ。<br/>
+                                                    このページでは、ご自身のプロフィール変更やポイントがもらえるミッション、また通知設定やポイントの購入など、色々なアクションができます。]]></string>
+
+    <string name="fragment_step_7_txt1">おつかれさまでした♪</string>
+    <string name="fragment_step_7_txt2">以上で基本的な操作の説明は終了です。\nそれでは Candy で好みの方と素敵な時間をお過ごしください☆ \n\n今ならSMSメッセージを受け取るだけで、無料ポイントをプレゼントして いますので、ぜひご利用くださいね＾＾</string>
+
+    <string name="performer_tutorial_first">こちらのページの使い方も、少しだけご説明しておきますね☆</string>
+    <string name="performer_tutorial_button_chat_message"><![CDATA[こちらが<font color="#f248d5">「メッセージボタン」</font>。タップするとこの女の子にメッセージをとどける事ができます。]]></string>
+    <string name="performer_tutorial_button_call_video"><![CDATA[こちらが<font color="#0ec6c3">「ビデオ通話ボタン」</font>。タップするとこの女の子とのビデオ通話がスタートします。]]></string>
+    <string name="performer_tutorial_button_peep_video"><![CDATA[こちらが<font color="#0ec6c3">「ビデオ通話ボタン」</font>。タップするとこの女の子とのビデオ通話がスタートします。]]></string>
+    <string name="performer_tutorial_button_like"><![CDATA[そして、こちらが<font color="#f248d5">「ハートアイコン」</font>。タップするとお気に入りに登録されます。お気に入りページであとから確認する事ができます。]]></string>
+    <string name="performer_tutorial_last"><![CDATA[チュートリアルはこれにて終了です。<br/> <br/>それでは、引き続き Candy をお楽しみ下さいっ☆]]></string>
+    <string name="performer_tutorial_last_text_button">チュートリアルを終了する</string>
+
+    <!--Footprint-->
+    <string name="footprint_date_time">dec 13:21</string>
+
+    <string name="text_search_empty">女の子が見つかりませんでした</string>
+
+    <string name="message_dialog_before_choose_image"><![CDATA[画像を送信する場合は<b>200pts</b>消費されます。]]></string>
+
+</resources>

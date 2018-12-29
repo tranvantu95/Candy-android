@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_background_color_3"
+    tools:context=".activity.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_login"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/CustomActionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_frame"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/blog_size_7dp"
+                android:layout_marginStart="@dimen/login_size_20dp"
+                android:layout_marginTop="@dimen/mission_size_24dp"
+                android:text="@string/label_email"
+                android:textColor="@color/mission_title_color"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp">
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    style="@style/Login_EditText_Style"
+                    android:layout_height="@dimen/login_size_44dp"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress|textWebEmailAddress"
+                    android:nextFocusLeft="@id/edt_email"
+                    android:nextFocusUp="@id/edt_email"
+                    android:paddingEnd="@dimen/login_size_36dp"
+                    android:paddingStart="@dimen/mission_size_12dp"
+                    android:textColorHint="@color/divider_custom_color_3" />
+
+                <ImageView
+                    android:id="@+id/btn_clear_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginTop="@dimen/mission_size_1dp"
+                    app:srcCompat="@drawable/text_field_clear_btn" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/login_size_20dp"
+                android:layout_marginTop="@dimen/menu_size_22dp"
+                android:text="@string/label_password"
+                android:textColor="@color/mission_title_color"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mission_size_16dp"
+                android:layout_marginStart="@dimen/mission_size_16dp"
+                android:layout_marginTop="@dimen/blog_size_7dp">
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    style="@style/Login_EditText_Style"
+                    android:layout_height="@dimen/login_size_44dp"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword|textWebPassword"
+                    android:nextFocusLeft="@id/edt_password"
+                    android:nextFocusUp="@id/edt_password"
+                    android:paddingEnd="@dimen/login_size_36dp"
+                    android:paddingStart="@dimen/mission_size_12dp"
+                    android:textColorHint="@color/divider_custom_color_3" />
+
+                <ImageView
+                    android:id="@+id/btn_clear_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginTop="@dimen/mission_size_1dp"
+                    app:srcCompat="@drawable/text_field_clear_btn" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mission_size_54dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/mission_size_16dp"
+            android:layout_marginEnd="@dimen/mission_size_16dp"
+            android:layout_marginStart="@dimen/mission_size_16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_sms_2"
+            android:text="@string/str_login"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/pink_button_text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_re_issue_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/mission_size_24dp"
+        android:gravity="center"
+        android:letterSpacing="0.18"
+        android:text="@string/login_hyper_link_forgot_password"
+        android:textColor="@color/text_color_profile_3"
+        android:textSize="@dimen/activity_login_forgot_pwd_text_size"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/login_size_36dp"
+        android:layout_marginEnd="@dimen/login_size_83dp"
+        android:layout_marginStart="@dimen/login_size_83dp">
+
+        <Button
+            android:id="@+id/btn_back_to_register"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mission_size_54dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_mission_clear_red_shadowed"
+            android:gravity="center"
+            android:text="@string/activity_login_register"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/mission_text_size_16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</LinearLayout>

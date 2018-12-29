@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="center_vertical|fill_horizontal">
+
+    <TextView
+        android:id="@+id/screen_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="@string/profile_registration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/toolbar_title"
+        android:textSize="@dimen/text_toolbar_size"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/small_padding"
+    android:layout_marginTop="@dimen/small_padding">
+
+    <TextView
+        android:id="@+id/groupSentDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/message_datetime_bubble"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/common_size_24dp"
+        android:layout_marginStart="@dimen/small_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:shrinkColumns="1">
+
+        <TableRow>
+
+            <com.meg7.widget.CircleImageView
+                android:id="@+id/performerImage"
+                android:layout_width="@dimen/mail_line_performer_image_size"
+                android:layout_height="@dimen/mail_line_performer_image_size"
+                android:src="@drawable/no_image"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/message_performer_bubble">
+
+                <ImageView
+                    android:id="@+id/attached_image"
+                    android:layout_width="@dimen/fragment_mail_attach_image_size"
+                    android:layout_height="@dimen/fragment_mail_attach_image_size"
+                    android:paddingBottom="@dimen/large_padding"
+                    android:scaleType="center"
+                    android:adjustViewBounds="true" />
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/message_body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="@dimen/text_spacing_extra"
+                    android:textColor="@color/text_color_default"
+                    android:textSize="@dimen/text_size_medium"
+                    android:text="@string/message_body_example_2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/sendDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_padding"
+                android:layout_marginStart="@dimen/small_padding"
+                android:layout_gravity="bottom"
+                android:textColor="@color/himecas_gray"
+                android:textSize="@dimen/text_size_small" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

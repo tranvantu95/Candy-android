@@ -1,0 +1,2 @@
+﻿証明書のPassword `Candy-app@8&2018`
+Alias: `candy`

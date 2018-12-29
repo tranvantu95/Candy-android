@@ -1,0 +1,322 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="default_divider_size">1dp</dimen>
+
+    <dimen name="text_size_min">10sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="menu_item_height">80dp</dimen>
+    <dimen name="profile_edit_area_width">180dp</dimen>
+
+    <dimen name="main_action_bar_item_space">5dp</dimen>
+    <dimen name="count_msg_size">16dp</dimen>
+
+    <!--PerformersListFragment-->
+    <dimen name="text_girl_name_size">12sp</dimen>
+    <dimen name="gallery_item_size">44dp</dimen>
+
+    <dimen name="tiny_padding">2dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="small_padding_x">6dp</dimen>
+    <dimen name="medium_padding">8dp</dimen>
+    <dimen name="big_padding">10dp</dimen>
+    <dimen name="large_padding">12dp</dimen>
+    <dimen name="m_large_padding">14dp</dimen>
+    <dimen name="x_large_padding">16dp</dimen>
+    <dimen name="xx_large_padding">24dp</dimen>
+    <dimen name="super_large_padding">40dp</dimen>
+
+    <dimen name="text_size_nano">8sp</dimen>
+    <dimen name="text_size_nano_x">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_big">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_large_x">20sp</dimen>
+    <dimen name="text_toolbar_size">16sp</dimen>
+    <dimen name="text_toolbar_size_small">14sp</dimen>
+    <dimen name="age_toolbar_size">12sp</dimen>
+
+    <dimen name="margin_title_performer">24dp</dimen>
+
+    <!--Profile Registration-->
+    <dimen name="profile_item_height">70dp</dimen>
+    <dimen name="profile_margin_to_arrow">10dp</dimen>
+    <dimen name="profile_avatar_size">82dp</dimen>
+    <dimen name="registration_size_55dp">55dp</dimen>
+
+    <!--Favorite/Unfavorite performer-->
+    <dimen name="favorite_list_item_height">100dip</dimen>
+    <dimen name="favorite_list_item_height_2">60dp</dimen>
+    <dimen name="favorite_list_padding">6.5dp</dimen>
+    <dimen name="favorite_list_item_padding">5dp</dimen>
+    <dimen name="favorite_list_item_space">3dp</dimen>
+    <dimen name="favorite_list_item_no_space">0dp</dimen>
+    <dimen name="favorite_list_item_corner">2dp</dimen>
+    <dimen name="favorite_list_item_avatar_corner">2dp</dimen>
+    <dimen name="favorite_list_item_avatar_corner_2">180dp</dimen>
+    <dimen name="favorite_list_item_icon_chat_padding">6dp</dimen>
+    <dimen name="favorite_status_text_size">12sp</dimen>
+    <dimen name="favorite_status_text_padding">2dp</dimen>
+    <dimen name="favorite_status_text_padding_side">8dp</dimen>
+    <dimen name="favorite_status_text_name_size">14sp</dimen>
+    <dimen name="favorite_size_5dp">5dp</dimen>
+    <dimen name="favorite_size_58dp">58dp</dimen>
+    <dimen name="favorite_size_80dp">80dp</dimen>
+    <dimen name="favorite_max_width">200dp</dimen>
+
+    <!--Footprint-->
+    <dimen name="footprint_list_item_padding">8dp</dimen>
+    <dimen name="footprint_list_item_space">0dp</dimen>
+    <dimen name="footprint_size_26dp">26dp</dimen>
+    <dimen name="footprint_item_height">74dp</dimen>
+
+    <!--Block Screen-->
+    <dimen name="block_screen_default_padding">8dp</dimen>
+    <dimen name="block_screen_content_padding">16dp</dimen>
+    <!--Dialog-->
+    <dimen name="dialog_content_padding">16dip</dimen>
+    <dimen name="dialog_content_padding_2">28dip</dimen>
+    <dimen name="dialog_confirm_padding">20dip</dimen>
+    <dimen name="padding_hor_login_widgets">12dp</dimen>
+    <dimen name="margins_login_widgets">4dp</dimen>
+    <dimen name="activity_login_edit_text_corner_radius">4dp</dimen>
+    <dimen name="activity_login_edit_text_padding">16dp</dimen>
+    <dimen name="pink_button_corner_radius">40dp</dimen>
+    <dimen name="radius_4dp">4dp</dimen>
+    <dimen name="activity_login_edit_text_size">14sp</dimen>
+    <dimen name="pink_button_text_size">16sp</dimen>
+    <dimen name="yellow_button_corner_radius">40dp</dimen>
+    <dimen name="sms_button_corner_radius">40dp</dimen>
+    <dimen name="activity_login_forgot_pwd_text_size">12sp</dimen>
+    <dimen name="activity_login_back_to_reg_btn_hor_mar">12dp</dimen>
+    <dimen name="dialog_re_issue_password_label_size">16sp</dimen>
+    <dimen name="dialog_confirm_button_margin">4sp</dimen>
+    <dimen name="dialog_radius">15dp</dimen>
+    <dimen name="dialog_max_height_200dp">200dp</dimen>
+
+    <!--Notification Setting-->
+    <dimen name="notification_setting_screen_default_padding">8dp</dimen>
+    <dimen name="notification_setting_content_padding">16dp</dimen>
+    <dimen name="action_bar_item_size">28dp</dimen>
+    <dimen name="main_tab_icon_size">26dp</dimen>
+    <dimen name="main_tab_height">56dp</dimen>
+    <dimen name="mail_line_performer_image_size">40dp</dimen>
+    <dimen name="fragment_mail_performer_image_width">60dp</dimen>
+    <dimen name="fragment_mail_performer_image_height">60dp</dimen>
+    <dimen name="frame_margin_small">3dp</dimen>
+    <dimen name="frame_padding_normal">12dp</dimen>
+    <dimen name="notification_bar_height">49dp</dimen>
+    <dimen name="noti_size_46dp">46dp</dimen>
+
+    <!--Image Crop-->
+    <dimen name="text_size_s">16sp</dimen>
+    <dimen name="play_outline_size">40dp</dimen>
+
+    <dimen name="rotate_padding">16dp</dimen>
+
+    <!--PerformerProfile-->
+    <dimen name="performer_profile_bottom_button_margin">4dp</dimen>
+    <dimen name="short_message_height">38dp</dimen>
+    <dimen name="performer_profile_bottom_height">76dp</dimen>
+    <dimen name="performer_name_layout_height">56dp</dimen>
+    <dimen name="performer_btn_like_width">55dp</dimen>
+
+    <!--Blog List-->
+    <dimen name="blog_image_height">304dp</dimen>
+    <dimen name="blog_size_2dp">2dp</dimen>
+    <dimen name="blog_size_16dp">16dp</dimen>
+
+    <!--Blog detail-->
+    <dimen name="button_like_blog_width">58dp</dimen>
+    <dimen name="button_like_blog_height">30dp</dimen>
+    <dimen name="blog_detail_height">320dp</dimen>
+    <dimen name="blog_max_height">200dp</dimen>
+    <dimen name="blog_size_1dp">1dp</dimen>
+    <dimen name="blog_size_3dp">3dp</dimen>
+    <dimen name="blog_size_7dp">7dp</dimen>
+    <dimen name="blog_size_11dp">11dp</dimen>
+    <dimen name="blog_size_14dp">14dp</dimen>
+    <dimen name="blog_size_18dp">18dp</dimen>
+    <dimen name="blog_size_29dp">29dp</dimen>
+    <dimen name="blog_size_58dp">58dp</dimen>
+    <dimen name="blog_size_60dp">60dp</dimen>
+    <dimen name="blog_size_62dp">62dp</dimen>
+    <dimen name="blog_text_size_9sp">9sp</dimen>
+    <dimen name="blog_text_size_11sp">11sp</dimen>
+
+    <!--Menu-->
+    <dimen name="menu_item_padding">8dip</dimen>
+    <dimen name="menu_size_6dp">6dp</dimen>
+    <dimen name="menu_size_17dp">17dp</dimen>
+    <dimen name="menu_size_22dp">22dp</dimen>
+    <dimen name="menu_size_30dp">30dp</dimen>
+    <dimen name="menu_size_35dp">35dp</dimen>
+    <dimen name="menu_size_52dp">52dp</dimen>
+    <dimen name="menu_size_146dp">146dp</dimen>
+    <dimen name="fragment_profile_register_performer_image_size">82dp</dimen>
+    <dimen name="performer_detail_info_tab_height">44dp</dimen>
+    <dimen name="performer_detail_toolbar_height">56dp</dimen>
+    <dimen name="fragment_mail_line_toolbox_height">48dp</dimen>
+    <dimen name="fragment_mail_line_ic_smile_width">40dp</dimen>
+    <dimen name="dialog_point_missing_button_width">116dp</dimen>
+    <dimen name="dialog_point_missing_button_height">54dp</dimen>
+    <dimen name="text_spacing_extra">4sp</dimen>
+    <dimen name="image_to_send_width">56dp</dimen>
+    <dimen name="image_to_send_height">45dp</dimen>
+    <dimen name="fragment_mail_attach_image_size">100dp</dimen>
+    <dimen name="text_size_menu_item">11.5sp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_max_width_160dp">160dp</dimen>
+    <dimen name="toolbar_min_width_40dp">40dp</dimen>
+
+    <!-- EditText -->
+    <dimen name="edit_text_width_112dp">112dp</dimen>
+
+    <!-- Point -->
+    <dimen name="buy_point_button_width_144dp">144dp</dimen>
+
+    <!-- Message -->
+    <dimen name="message_item_height_84dp">84dp</dimen>
+
+    <!--Mission-->
+    <dimen name="mission_size_0dp">0dp</dimen>
+    <dimen name="mission_size_1dp">1dp</dimen>
+    <dimen name="mission_size_4dp">4dp</dimen>
+    <dimen name="mission_size_6dp">6dp</dimen>
+    <dimen name="mission_size_8dp">8dp</dimen>
+    <dimen name="mission_size_12dp">12dp</dimen>
+    <dimen name="mission_size_16dp">16dp</dimen>
+    <dimen name="mission_size_19dp">19dp</dimen>
+    <dimen name="mission_size_24dp">24dp</dimen>
+    <dimen name="mission_size_32dp">32dp</dimen>
+    <dimen name="mission_size_34dp">34dp</dimen>
+    <dimen name="mission_size_41dp">41dp</dimen>
+    <dimen name="mission_size_48dp">48dp</dimen>
+    <dimen name="mission_size_54dp">54dp</dimen>
+    <dimen name="mission_size_64dp">64dp</dimen>
+    <dimen name="mission_size_66dp">66dp</dimen>
+    <dimen name="mission_size_114dp">114dp</dimen>
+    <dimen name="mission_size_186dp">186dp</dimen>
+    <dimen name="mission_size_240dp">240dp</dimen>
+    <dimen name="mission_text_size_6sp">6sp</dimen>
+    <dimen name="mission_text_size_14sp">14sp</dimen>
+    <dimen name="mission_text_size_16sp">16sp</dimen>
+    <dimen name="mission_text_size_30sp">30sp</dimen>
+    <dimen name="mission_text_size_40sp">40sp</dimen>
+    <dimen name="mission_corner_size">8dp</dimen>
+
+    <!-- 72 Hour -->
+    <dimen name="dialog72_icon_width">28dp</dimen>
+    <dimen name="dialog72_anim_tap">104dp</dimen>
+
+    <!-- SMS View Margin -->
+    <dimen name="layout_no_margin">0dp</dimen>
+    <dimen name="text_left_margin">16dp</dimen>
+    <dimen name="text_left_large_margin">26dp</dimen>
+    <dimen name="text_right_margin">36dp</dimen>
+    <dimen name="text_right_large_margin">64dp</dimen>
+    <dimen name="text_top_large_margin">24dp</dimen>
+    <dimen name="text_top_margin">8dp</dimen>
+    <dimen name="text_bot_margin">2dp</dimen>
+    <dimen name="textbox_top_margin">16dp</dimen>
+    <dimen name="link_top_margin">15dp</dimen>
+    <dimen name="sms_margin_top">137dp</dimen>
+
+    <!--dialog search-->
+    <dimen name="dialog_search_text_size">14sp</dimen>
+
+    <!--Ranking-->
+    <dimen name="image_rank_size">64dp</dimen>
+    <dimen name="image_rank_size_2">50dp</dimen>
+    <dimen name="ranking_size_76dp">76dp</dimen>
+    <dimen name="ranking_size_84dp">84dp</dimen>
+    <dimen name="ranking_size_126dp">126dp</dimen>
+
+    <!--tutorial-->
+    <dimen name="tutorial_commnon_text_size">15sp</dimen>
+    <dimen name="tutorial_common_button_margin_bottom">110dp</dimen>
+    <dimen name="tutorial_common_button_height">55dp</dimen>
+    
+    <!--Login-->
+    <dimen name="login_size_20dp">20dp</dimen>
+    <dimen name="login_size_36dp">36dp</dimen>
+    <dimen name="login_size_44dp">44dp</dimen>
+    <dimen name="login_size_83dp">83dp</dimen>
+    
+    <!-- Profile -->
+    <dimen name="profile_size_2dp">2dp</dimen>
+    <dimen name="profile_size_10dp">10dp</dimen>
+    <dimen name="profile_size_16dp">16dp</dimen>
+    <dimen name="profile_size_18dp">18dp</dimen>
+    <dimen name="profile_size_30dp">30dp</dimen>
+    <dimen name="profile_size_48dp">48dp</dimen>
+    <dimen name="profile_size_62dp">62dp</dimen>
+    <dimen name="profile_size_150dp">150dp</dimen>
+    <dimen name="profile_text_size_14sp">14sp</dimen>
+    <dimen name="profile_text_size_16sp">16sp</dimen>
+
+    <!-- Common -->
+    <dimen name="common_text_size_8sp">8sp</dimen>
+    <dimen name="common_text_size_10sp">10sp</dimen>
+    <dimen name="common_text_size_11sp">11sp</dimen>
+    <dimen name="common_text_size_12sp">12sp</dimen>
+    <dimen name="common_text_size_13sp">13sp</dimen>
+    <dimen name="common_text_size_14sp">14sp</dimen>
+    <dimen name="common_text_size_15sp">15sp</dimen>
+    <dimen name="common_text_size_16sp">16sp</dimen>
+    <dimen name="common_size_0dp">0dp</dimen>
+    <dimen name="common_size_1dp">1dp</dimen>
+    <dimen name="common_size_2dp">2dp</dimen>
+    <dimen name="common_size_3dp">3dp</dimen>
+    <dimen name="common_size_4dp">4dp</dimen>
+    <dimen name="common_size_5dp">5dp</dimen>
+    <dimen name="common_size_6dp">6dp</dimen>
+    <dimen name="common_size_7dp">7dp</dimen>
+    <dimen name="common_size_8dp">8dp</dimen>
+    <dimen name="common_size_9dp">9dp</dimen>
+    <dimen name="common_size_10dp">10dp</dimen>
+    <dimen name="common_size_11dp">11dp</dimen>
+    <dimen name="common_size_12dp">12dp</dimen>
+    <dimen name="common_size_13dp">13dp</dimen>
+    <dimen name="common_size_14dp">14dp</dimen>
+    <dimen name="common_size_15dp">15dp</dimen>
+    <dimen name="common_size_16dp">16dp</dimen>
+    <dimen name="common_size_17dp">17dp</dimen>
+    <dimen name="common_size_18dp">18dp</dimen>
+    <dimen name="common_size_20dp">20dp</dimen>
+    <dimen name="common_size_22dp">22dp</dimen>
+    <dimen name="common_size_23dp">23dp</dimen>
+    <dimen name="common_size_24dp">24dp</dimen>
+    <dimen name="common_size_25dp">25dp</dimen>
+    <dimen name="common_size_27dp">27dp</dimen>
+    <dimen name="common_size_28dp">28dp</dimen>
+    <dimen name="common_size_30dp">30dp</dimen>
+    <dimen name="common_size_32dp">32dp</dimen>
+    <dimen name="common_size_34dp">34dp</dimen>
+    <dimen name="common_size_36dp">36dp</dimen>
+    <dimen name="common_size_37dp">37dp</dimen>
+    <dimen name="common_size_39dp">39dp</dimen>
+    <dimen name="common_size_40dp">40dp</dimen>
+    <dimen name="common_size_42dp">42dp</dimen>
+    <dimen name="common_size_46dp">46dp</dimen>
+    <dimen name="common_size_51dp">51dp</dimen>
+    <dimen name="common_size_50dp">50dp</dimen>
+    <dimen name="common_size_54dp">54dp</dimen>
+    <dimen name="common_size_56dp">56dp</dimen>
+    <dimen name="common_size_60dp">60dp</dimen>
+    <dimen name="common_size_61dp">61dp</dimen>
+    <dimen name="common_size_72dp">72dp</dimen>
+    <dimen name="common_size_100dp">100dp</dimen>
+    <dimen name="common_edit_text_size_44dp">44dp</dimen>
+    <dimen name="common_edit_text_size_46dp">46dp</dimen>
+    <dimen name="common_edit_text_size_47dp">47dp</dimen>
+    <dimen name="line_spacing_3sp">3sp</dimen>
+    <dimen name="line_spacing_4sp">4sp</dimen>
+    <dimen name="line_spacing_5sp">5sp</dimen>
+    <dimen name="line_spacing_7sp">7sp</dimen>
+</resources>
